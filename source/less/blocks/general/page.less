@@ -1,0 +1,22 @@
+.page {
+  max-width: 1920px;
+  height: 100%;
+  .offset(0; 0 auto);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
+  margin: 0;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  .typography(12px; 19px);
+  background-color: @white;
+  color: @grey4;
+  overflow-x: hidden;
+}
