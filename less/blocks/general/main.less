@@ -1,0 +1,30 @@
+.main {
+  .offset(0; 0);
+}
+
+.main__subtitle {
+  .offset(0; 0 0 16px 0);
+  font-weight: 600;
+  .typography(24px; 34px);
+  color: @turquoise1;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .typography(45px; 55px);
+  }
+}
+
+.main__subtitle--order {
+  margin-bottom: 60px;
+}
+
+.main__description {
+  .offset(0; 0 0 40px 0);
+  .typography(16px; 20px);
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 80px;
+    .typography(20px; 24px);
+  }
+}
