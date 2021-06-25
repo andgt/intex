@@ -1,0 +1,96 @@
+.slider {
+  position: relative;
+  max-width: 480px;
+  .offset(40px 0 60px 0; 0 auto);
+}
+
+.slider__list {
+  display: flex;
+  flex-wrap: nowrap;
+  .offset(0; 0);
+  list-style: none;
+}
+
+.slider__item {
+  position: relative;
+  display: none;
+  width: 100%;
+  min-height: 520px;
+  .offset(51px 39px 30px 39px; 0 20px);
+  background-color: @white2;
+  border: 1px solid @white3;
+  box-shadow: 0 34px 30px -17px @blue4;
+  border-radius: 10px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 40%;
+    width: 64px;
+    height: 64px;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='32' cy='32' r='31' fill='url(%23paint0_linear)' stroke='url(%23paint1_linear)' stroke-width='2'/%3E%3Cpath d='M21.3333 34.7429C21.3333 32.4186 21.9143 30.1999 23.0765 28.0869C24.2915 25.9739 25.8498 24.2306 27.7515 22.8572L30.6833 25.2343C29.4155 26.0795 28.2798 27.2153 27.2761 28.6416C26.2724 30.015 25.7178 31.3357 25.6121 32.6035H26.0083C26.2724 32.5506 26.4837 32.5242 26.6422 32.5242C27.7515 32.5242 28.6496 32.9204 29.3363 33.7128C30.0759 34.4524 30.4456 35.4032 30.4456 36.5654C30.4456 37.7275 30.023 38.7312 29.1778 39.5764C28.3854 40.3688 27.4082 40.765 26.246 40.765C24.8726 40.765 23.7104 40.2367 22.7595 39.1802C21.8087 38.0709 21.3333 36.5918 21.3333 34.7429ZM34.0113 34.7429C34.0113 32.4186 34.5924 30.1999 35.7546 28.0869C36.9696 25.9739 38.5279 24.2306 40.4296 22.8572L43.3614 25.2343C42.0936 26.0795 40.9579 27.2153 39.9542 28.6416C39.0033 30.015 38.4487 31.3357 38.2902 32.6035H38.6864C38.9505 32.5506 39.1618 32.5242 39.3203 32.5242C40.4296 32.5242 41.3541 32.9204 42.0936 33.7128C42.8332 34.4524 43.203 35.4032 43.203 36.5654C43.203 37.7275 42.7804 38.7312 41.9352 39.5764C41.0899 40.3688 40.0863 40.765 38.9241 40.765C37.5506 40.765 36.3885 40.2367 35.4376 39.1802C34.4868 38.0709 34.0113 36.5918 34.0113 34.7429Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='0' y1='32' x2='64' y2='32' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='2.08616e-07' y1='32' x2='64' y2='32' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    z-index: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 39px 50px 39px;
+  }
+}
+
+.slider__item--show {
+  display: flex;
+  flex-grow: 1;
+}
+
+.slider__controls {
+  position: relative;
+  z-index: 10;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: -300px;
+  display: block;
+  width: 42px;
+  height: 42px;
+  .offset(0; 0);
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='20' transform='matrix(-1 0 0 1 21 21)' stroke='url(%23paint0_linear)' stroke-width='2'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M16.11 21.5463L22.3417 27.7752C22.4869 27.9203 22.6775 28 22.8824 28C23.0873 28 23.2808 27.9203 23.423 27.7752L23.884 27.3171C24.1828 27.0183 24.1828 26.5317 23.884 26.2329L18.6511 21L23.8897 15.7642C24.0348 15.6191 24.1145 15.4285 24.1145 15.2236C24.1145 15.0187 24.0348 14.8252 23.8897 14.6829L23.4316 14.2248C23.2865 14.0797 23.0958 14 22.8909 14C22.686 14 22.4926 14.0797 22.3503 14.2248L16.11 20.4593C15.9649 20.6045 15.8852 20.798 15.8881 21.0028C15.8881 21.2077 15.9649 21.4012 16.11 21.5463Z' fill='url(%23paint1_linear)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1.36904e-07' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='20.0013' y1='28' x2='20.0013' y2='14' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2347A4D4'/%3E%3Cstop offset='1' stop-color='%2344BFD2'/%3E%3C/linearGradient%3E%3CclipPath id='clip0'%3E%3Crect width='14' height='14' fill='white' transform='translate(27 28) rotate(-180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+}
+
+.slider__toggle--left {
+  left: -3px;
+}
+
+.slider__toggle--right {
+  right: -3px;
+  transform: rotate(180deg);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1) rotate(-180deg);
+  }
+}
