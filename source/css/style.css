@@ -639,7 +639,7 @@ a {
   margin: 0 20px;
   background-color: #fefefe;
   border: 1px solid #f0f0f0;
-  box-shadow: 0px 34px 30px -17px rgba(71, 159, 212, 0.3);
+  box-shadow: 0 34px 30px -17px rgba(71, 159, 212, 0.3);
   border-radius: 10px;
   z-index: 1;
 }
@@ -1393,6 +1393,98 @@ a {
   .reviews__link {
     font-size: 18px;
     line-height: 22px;
+  }
+}
+.feedback {
+  padding: 40px 0 60px 0;
+  margin: 0;
+  background-color: #e9f5fc;
+}
+.feedback__questions {
+  max-width: 400px;
+  min-height: 540px;
+  padding: 0;
+  margin: 40px auto 0 auto;
+  list-style: none;
+}
+.feedback__item {
+  margin-bottom: 20px;
+}
+.feedback__questions--text {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.feedback__questions-title {
+  position: relative;
+  padding: 21px 47px 20px 52px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  transition: 0.3s ease;
+}
+@media (min-width: 768px) {
+  .feedback__questions-title {
+    padding: 31px 42 30px 62px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.feedback__item:hover .feedback__questions-title {
+  background: linear-gradient(90.71deg, #47a4d4 0.7%, #44c2d2 100%);
+  box-shadow: 0px 34px 30px -17px rgba(71, 159, 212, 0.2);
+  color: #ffffff;
+}
+.feedback__questions-title::before,
+.feedback__questions-title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  background-repeat: no-repeat;
+}
+.feedback__questions-title::before {
+  left: 10px;
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='21' cy='21' r='20' fill='url(%23paint0_linear)' stroke='url(%23paint1_linear)' stroke-width='2'/%3E%3Cpath d='M27.125 18.125C27.125 16.6332 26.5324 15.2024 25.4775 14.1475C24.4226 13.0926 22.9918 12.5 21.5 12.5C20.0082 12.5 18.5774 13.0926 17.5225 14.1475C16.4676 15.2024 15.875 16.6332 15.875 18.125C15.875 18.4234 15.9935 18.7095 16.2045 18.9205C16.4155 19.1315 16.7016 19.25 17 19.25C17.2984 19.25 17.5845 19.1315 17.7955 18.9205C18.0065 18.7095 18.125 18.4234 18.125 18.125C18.125 17.4575 18.3229 16.805 18.6938 16.25C19.0646 15.6949 19.5917 15.2624 20.2084 15.0069C20.8251 14.7515 21.5037 14.6846 22.1584 14.8149C22.8131 14.9451 23.4145 15.2665 23.8865 15.7385C24.3585 16.2105 24.6799 16.8119 24.8101 17.4666C24.9404 18.1213 24.8735 18.7999 24.6181 19.4166C24.3626 20.0333 23.9301 20.5604 23.375 20.9312C22.82 21.3021 22.1675 21.5 21.5 21.5C21.2016 21.5 20.9155 21.6185 20.7045 21.8295C20.4935 22.0405 20.375 22.3266 20.375 22.625V24.875C20.375 25.1734 20.4935 25.4595 20.7045 25.6705C20.9155 25.8815 21.2016 26 21.5 26C21.7984 26 22.0845 25.8815 22.2955 25.6705C22.5065 25.4595 22.625 25.1734 22.625 24.875V23.6375C23.8955 23.3782 25.0374 22.6878 25.8575 21.6833C26.6775 20.6787 27.1253 19.4217 27.125 18.125Z' fill='white'/%3E%3Cpath d='M21.5 31C22.3284 31 23 30.3284 23 29.5C23 28.6716 22.3284 28 21.5 28C20.6716 28 20 28.6716 20 29.5C20 30.3284 20.6716 31 21.5 31Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='0' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='1.36904e-07' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.feedback__item:hover .feedback__questions-title::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='33' height='32' viewBox='0 0 43 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M41.2463 21.001C41.2463 32.0412 32.2424 41.001 21.1232 41.001C10.0039 41.001 1 32.0412 1 21.001C1 9.96079 10.0039 1.00098 21.1232 1.00098C32.2424 1.00098 41.2463 9.96079 41.2463 21.001Z' stroke='white' stroke-width='2'/%3E%3Cpath d='M27.2842 18.126C27.2842 16.6341 26.6881 15.2034 25.6271 14.1485C24.566 13.0936 23.1268 12.501 21.6263 12.501C20.1257 12.501 18.6865 13.0936 17.6254 14.1485C16.5644 15.2034 15.9683 16.6341 15.9683 18.126C15.9683 18.4243 16.0875 18.7105 16.2997 18.9215C16.5119 19.1325 16.7997 19.251 17.0999 19.251C17.4 19.251 17.6878 19.1325 17.9 18.9215C18.1122 18.7105 18.2315 18.4243 18.2315 18.126C18.2315 17.4585 18.4306 16.8059 18.8036 16.2509C19.1766 15.6959 19.7068 15.2633 20.3271 15.0079C20.9474 14.7524 21.63 14.6856 22.2885 14.8158C22.9471 14.9461 23.552 15.2675 24.0267 15.7395C24.5015 16.2115 24.8248 16.8129 24.9558 17.4675C25.0868 18.1222 25.0196 18.8008 24.7626 19.4175C24.5057 20.0342 24.0706 20.5613 23.5123 20.9322C22.954 21.303 22.2977 21.501 21.6263 21.501C21.3261 21.501 21.0383 21.6195 20.8261 21.8305C20.6139 22.0415 20.4947 22.3276 20.4947 22.626V24.876C20.4947 25.1743 20.6139 25.4605 20.8261 25.6715C21.0383 25.8825 21.3261 26.001 21.6263 26.001C21.9264 26.001 22.2142 25.8825 22.4264 25.6715C22.6386 25.4605 22.7578 25.1743 22.7578 24.876V23.6385C24.0358 23.3791 25.1844 22.6888 26.0093 21.6842C26.8341 20.6797 27.2845 19.4227 27.2842 18.126V18.126Z' fill='white'/%3E%3Cpath d='M21.626 31.001C22.4593 31.001 23.1348 30.3294 23.1348 29.501C23.1348 28.6725 22.4593 28.001 21.626 28.001C20.7927 28.001 20.1172 28.6725 20.1172 29.501C20.1172 30.3294 20.7927 31.001 21.626 31.001Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.feedback__questions-title::after {
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='20' transform='matrix(-4.37114e-08 1 1 4.37114e-08 21 21)' stroke='url(%23paint0_linear)' stroke-width='2'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M20.4537 25.8897L14.2248 19.658C14.0797 19.5129 14 19.3222 14 19.1174C14 18.9125 14.0797 18.719 14.2248 18.5767L14.6829 18.1157C14.9817 17.817 15.4683 17.817 15.7671 18.1157L21 23.3487L26.2358 18.1101C26.3809 17.9649 26.5715 17.8853 26.7764 17.8853C26.9813 17.8853 27.1748 17.9649 27.3171 18.1101L27.7752 18.5682C27.9203 18.7133 28 18.904 28 19.1088C28 19.3137 27.9203 19.5072 27.7752 19.6495L21.5407 25.8897C21.3955 26.0348 21.202 26.1145 20.9972 26.1117C20.7923 26.1117 20.5988 26.0348 20.4537 25.8897Z' fill='url(%23paint1_linear)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1.36904e-07' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='14' y1='21.9985' x2='28' y2='21.9985' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2347A4D4'/%3E%3Cstop offset='1' stop-color='%2344BFD2'/%3E%3C/linearGradient%3E%3CclipPath id='clip0'%3E%3Crect width='14' height='14' fill='white' transform='matrix(-4.37114e-08 1 1 4.37114e-08 14 15)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.feedback__item:hover .feedback__questions-title::after {
+  transition: 0.3s ease;
+  transform: rotate(180deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='20' transform='matrix(-4.37114e-08 1 1 4.37114e-08 21 21)' stroke='white' stroke-width='2'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M20.4537 25.8897L14.2248 19.658C14.0797 19.5129 14 19.3222 14 19.1174C14 18.9125 14.0797 18.719 14.2248 18.5767L14.6829 18.1157C14.9817 17.817 15.4683 17.817 15.7671 18.1157L21 23.3487L26.2358 18.1101C26.3809 17.9649 26.5715 17.8853 26.7764 17.8853C26.9813 17.8853 27.1748 17.9649 27.3171 18.1101L27.7752 18.5682C27.9203 18.7133 28 18.904 28 19.1088C28 19.3137 27.9203 19.5072 27.7752 19.6495L21.5407 25.8897C21.3955 26.0348 21.202 26.1145 20.9972 26.1117C20.7923 26.1117 20.5988 26.0348 20.4537 25.8897Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1.36904e-07' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='14' y1='21.9985' x2='28' y2='21.9985' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2347A4D4'/%3E%3Cstop offset='1' stop-color='%2344BFD2'/%3E%3C/linearGradient%3E%3CclipPath id='clip0'%3E%3Crect width='14' height='14' fill='white' transform='matrix(-4.37114e-08 1 1 4.37114e-08 14 15)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.feedback__questions-answer {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  transition: all 0.3s ease;
+  opacity: 0.1;
+}
+.feedback__item:hover .feedback__questions-answer {
+  visibility: visible;
+  height: auto;
+  padding: 19px 48px 19px 14px;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .feedback__item:hover .feedback__questions-answer {
+    padding: 29px 58px 29px 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
