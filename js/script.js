@@ -64,3 +64,62 @@ let tab = function() {
 };
 
 tab();
+
+// Слайдер на мобильной версии
+
+let sliderItem = document.querySelectorAll(".slider__item");
+let btnLeft = document.querySelector(".slider__toggle--left");
+let btnRight = document.querySelector(".slider__toggle--right");
+let index = 0;
+
+const activeSlide = function (n) {
+  for (let slide of sliderItem) {
+    slide.classList.remove("slider__item--show");
+  }
+
+  sliderItem[index].classList.add("slider__item--show");
+}
+
+const nextSlide = function () {
+  if (index == sliderItem.length - 1)  {
+    index = 0;
+    activeSlide(index);
+  } else {
+    index++;
+    activeSlide(index);
+  }
+}
+
+const prevSlide = function () {
+  if (index == 0)  {
+    index = sliderItem.length - 1;
+    activeSlide(index);
+  } else {
+    index--;
+    activeSlide(index);
+  }
+}
+
+btnLeft.onclick = function() {
+  prevSlide(index);
+}
+
+btnRight.onclick = function() {
+  nextSlide(index);
+}
+
+// Кнопка наверх
+
+let scrollUp = document.querySelector(".button__scroll-up");
+
+window.onscroll = function () {
+  if (window.pageYOffset > 100) {
+    scrollUp.classList.add("button__scroll-up--showed");
+  } else {
+    scrollUp.classList.remove("button__scroll-up--showed");
+  }
+};
+
+scrollUp.onclick = function (evt) {
+  window.scrollTo(0, 0);
+};

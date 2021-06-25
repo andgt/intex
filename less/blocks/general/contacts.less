@@ -3,10 +3,20 @@
   flex-wrap: wrap;
   order: 3;
   .offset(0 10px; 0 0 40px 0);
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    order: 2;
+    margin: 0;
+  }
 }
 
 .contacts__messenger {
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .contacts__icon {
@@ -25,6 +35,10 @@
 
 .contacts__phone {
   .offset(0; 0 15px 30px 0);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__phone-link {
@@ -70,4 +84,59 @@
     transform: scale(1.02);
     transition: 0.4s ease;
   }
+
+  @media (min-width: @tablet-width) {
+    max-width: 190px;
+    margin: 0;
+  }
+}
+
+.contacts--footer {
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  .offset(0; 0 auto);
+}
+
+.contacts__title--footer {
+  margin-bottom: 14px;
+}
+
+.contacts__messenger--footer {
+  margin: 0 0 20px 0;
+}
+
+.contacts__icon--footer-viber {
+  margin-right: 20px;
+}
+
+.contacts__phone--footer {
+  margin: 0;
+}
+
+.contacts__phone-link--footer {
+  color: @white;
+
+  &:hover,
+  &:focus {
+    color: @yellow;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.contacts__title-schedule {
+  .offset(0; 0 0 5px 0);
+  font-weight: bold;
+  .typography(16px; 19px);
+  color: @white;
+  text-align: center;
+}
+
+.contacts__schedule--footer {
+  .typography(16px; 19px);
+  color: @white;
+  text-align: center;
 }
