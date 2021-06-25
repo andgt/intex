@@ -54,16 +54,19 @@
   &:hover,
   &:focus,
   &:active {
-    background: linear-gradient(90deg, @blue5 0%, @blue 100%);
-    color: @white;
     transform: none;
-    transition: 0.3s ease;
   }
 
   @media (min-width: @tablet-width) {
     padding: 19px 37px 17px 39px;
     .typography(20px; 24px);
   }
+}
+
+.catalog__tab-button--active {
+  background: linear-gradient(90deg, @blue5 0%, @blue 100%);
+  color: @white;
+  transition: 0.3s ease;
 }
 
 .catalog__tab-button--left {
@@ -79,11 +82,12 @@
 }
 
 .catalog__cards {
+  display: none;
   .offset(0; 0 0 60px 0);
 }
 
-.catalog__cards--accessories {
-  display: none;
+.catalog__cards--active {
+  display: block;
 }
 
 .catalog__list {

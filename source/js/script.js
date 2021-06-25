@@ -29,4 +29,38 @@ for (let menuItem of menuItems) {
       submenu.classList.toggle("main-nav__menu-item-open");
     }
   });
-}
+};
+
+// Табы
+
+let tab = function() {
+  let tabBtn = document.querySelectorAll(".catalog__tab-button");
+  let cardsBlock = document.querySelectorAll(".catalog__cards");
+  let tabName;
+
+  tabBtn.forEach(element => {
+    element.addEventListener("click", selectTab)
+  });
+
+  function selectTab(evt) {
+    evt.preventDefault();
+    tabBtn.forEach(element => {
+      element.classList.remove("catalog__tab-button--active");
+    });
+    this.classList.add("catalog__tab-button--active");
+    tabName = this.getAttribute("data-tab");
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent(tabName) {
+    cardsBlock.forEach(element => {
+      if (element.classList.contains(tabName)) {
+        element.classList.add("catalog__cards--active");
+      } else {
+        element.classList.remove("catalog__cards--active");
+      }
+    });
+  };
+};
+
+tab();
