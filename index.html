@@ -89,11 +89,11 @@
         <p class="catalog__description">У нас вы можете приобрести каркасные бассейны INTEX в полной комплектации</p>
         <div class="catalog__tab-wrapper">
           <div class="catalog__tab-inner">
-            <button class="catalog__tab-button catalog__tab-button--left button" type="button">Каркасные бассейны&nbsp;INTEX</button>
-            <button class="catalog__tab-button catalog__tab-button--right button" type="button">Аксессуары для&nbsp;бассейна</button>
+            <button class="catalog__tab-button catalog__tab-button--active catalog__tab-button--left button" type="button" data-tab="tab-1">Каркасные бассейны&nbsp;INTEX</button>
+            <button class="catalog__tab-button catalog__tab-button--right button" type="button" data-tab="tab-2">Аксессуары для&nbsp;бассейна</button>
           </div>
         </div>
-        <div class="catalog__cards catalog__cards--pools">
+        <div class="catalog__cards catalog__cards--active tab-1">
           <ul class="catalog__list">
             <li class="catalog__item product">
               <article class="product__card">
@@ -164,14 +164,17 @@
               </article>
             </li>
           </ul>
+          <div class="catalog__button-wrapper">
+            <button class="catalog__button-more button" type="button">Смотреть больше товаров</button>
+          </div>
         </div>
-        <div class="catalog__cards catalog__cards--accessories">
+        <div class="catalog__cards tab-2">
           <ul class="catalog__list">
             <li class="catalog__item product">
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="" width="" height="" alt="">
+                    <img class="product__img" src="img/catalog__card-accessories-1.png" width="252" height="189" alt="Подстилки">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -188,7 +191,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="" width="" height="" alt="">
+                    <img class="product__img" src="img/catalog__card-accessories-2.png" width="212" height="149" alt="Тент-накидки">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -205,7 +208,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="" width="" height="" alt="">
+                    <img class="product__img" src="img/catalog__card-accessories-3.png" width="140" height="163" alt="Фильтр-насосы">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -222,7 +225,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="" width="" height="" alt="">
+                    <img class="product__img" src="img/catalog__card-accessories-4.png" width="186" height="186" alt="Лестницы">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -236,9 +239,9 @@
               </article>
             </li>
           </ul>
-        </div>
-        <div class="catalog__button-wrapper">
-          <button class="catalog__button-more button" type="button">Смотреть больше товаров</button>
+          <div class="catalog__button-wrapper">
+            <button class="catalog__button-more button" type="button">Смотреть больше товаров</button>
+          </div>
         </div>
       </div>
     </section>
