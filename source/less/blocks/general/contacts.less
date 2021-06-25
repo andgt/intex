@@ -3,10 +3,20 @@
   flex-wrap: wrap;
   order: 3;
   .offset(0 10px; 0 0 40px 0);
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    order: 2;
+    margin: 0;
+  }
 }
 
 .contacts__messenger {
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .contacts__icon {
@@ -25,6 +35,10 @@
 
 .contacts__phone {
   .offset(0; 0 15px 30px 0);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__phone-link {
@@ -69,6 +83,11 @@
     opacity: 0.9;
     transform: scale(1.02);
     transition: 0.4s ease;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 190px;
+    margin: 0;
   }
 }
 

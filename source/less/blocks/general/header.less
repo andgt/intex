@@ -5,9 +5,20 @@
 
 .header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    margin-bottom: 88px;
+  }
 }
 
 .header__logo {
   order: 1;
+
+  @media (min-width: @desktop-width) {
+    width: 351px;
+    height: 55px;
+  }
 }
