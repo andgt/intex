@@ -83,6 +83,10 @@
 
 .slider__toggle--left {
   left: -3px;
+
+  @media (min-width: @tablet-width) {
+    left: -36px;
+  }
 }
 
 .slider__toggle--right {
@@ -92,5 +96,9 @@
   &:hover,
   &:focus {
     transform: scale(1.1) rotate(-180deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    right: -36px;
   }
 }

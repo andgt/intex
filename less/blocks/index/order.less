@@ -7,6 +7,17 @@
   }
 }
 
+.order__inner {
+  .offset(0; 0);
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(489px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
 .order__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
@@ -15,6 +26,10 @@
   align-items: stretch;
   .offset(0; 0 0 57px 0);
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: auto;
+  }
 }
 
 .order__item {

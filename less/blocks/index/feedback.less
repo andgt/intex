@@ -3,11 +3,26 @@
   background-color: @white4;
 }
 
+.feedback__inner {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(551px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+  }
+}
+
 .feedback__questions {
   max-width: 400px;
   min-height: 540px;
   .offset(0; 40px auto 0 auto);
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    max-width: 900px;
+    margin-top: 0;
+  }
 }
 
 .feedback__item {
