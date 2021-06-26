@@ -21,6 +21,16 @@
   max-width: 300px;
   min-height: 64px;
   .offset(0; 0 auto);
+
+  @media (min-width: @tablet-width) {
+    min-height: 78px;
+  }
+}
+
+.button__order-wrapper--advantages {
+  @media (min-width: @tablet-width) {
+    margin-top: 120px;
+  }
 }
 
 .button__order-inner {
@@ -47,7 +57,7 @@
   transition: 0.3s ease;
 
   @media (min-width: @tablet-width) {
-    .offset(19px 41px 27px 40px; 0);
+    padding: 19px 41px 27px 40px;
   }
 }
 
@@ -57,6 +67,13 @@
   border: 0;
   color: @white;
   cursor: pointer;
+}
+
+.button__order--description {
+  @media (min-width: @tablet-width) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .button__scroll-up {

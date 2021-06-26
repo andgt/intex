@@ -67,9 +67,11 @@
         <div class="container">
           <h1 class="promo__title">Закажите каркасный бассейн INTEX</h1>
           <p class="promo__description">с доставкой и установкой по Курску и Курской области</p>
-          <picture>
-            <img class="promo__img" src="img/mobile-img/promo-img.jpg" width="700" height="478" alt="Бассейн Intex">
-          </picture>
+          <div class="promo__img-wrapper">
+            <picture>
+              <img class="promo__img" src="img/mobile-img/promo-img.jpg" width="700" height="478" alt="Бассейн Intex">
+            </picture>
+          </div>
           <ul class="promo__list">
             <li class="promo__item">Цены не повышаются в сезон</li>
             <li class="promo__item">При заказе бассейна скидка 37% на химию</li>
@@ -249,28 +251,30 @@
     <section class="advantages">
       <div class="container">
         <h2 class="main__subtitle">Почему стоит выбрать каркасный бассейн Intex</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--plus"><strong>Возможность выбрать</strong> конструкцию любой формы и размера, что позволит вписать бассейн в любой ландшафт</li>
-          <li class="advantages__item advantages__item--plus"><strong>Большой выбор моделей</strong>, в том числе, морозостойких. Такие бассейны не нужно демонтировать при наступлении зимы</li>
-          <li class="advantages__item advantages__item--plus"><strong>Установка и использование</strong> возможны без использования электрооборудования и насосов</li>
-          <li class="advantages__item advantages__item--plus"><strong>Долговечность и устойчивость</strong> к внешнему механическому воздействию, благодаря трехслойному материалу</li>
-        </ul>
-        <ul class="advantages__structure">
-          <li class="advantages__item advantages__item--structure">
-            <h3 class="advantages__structure-title advantages__structure-title--internal-cladding">Внутренняя облицовка:</h3>
-            <span class="advantages__structure-description">материал ПВХ</span>
-            <span class="advantages__structure-description">имитация мозаики</span>
-          </li>
-          <li class="advantages__item advantages__item--structure">
-            <h3 class="advantages__structure-title advantages__structure-title--internal-layer">Внутренняя прослойка:</h3>
-            <span class="advantages__structure-description">стекло-волоконная сетка</span>
-          </li>
-          <li class="advantages__item advantages__item--structure">
-            <h3 class="advantages__structure-title advantages__structure-title--external-cladding">Внешняя облицовка:</h3>
-            <span class="advantages__structure-description">материал ПВХ</span>
-          </li>
-        </ul>
-        <div class="button__order-wrapper">
+        <div class="advantages__list-wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--plus"><strong>Возможность выбрать</strong> конструкцию любой формы и размера, что позволит вписать бассейн в любой ландшафт</li>
+            <li class="advantages__item advantages__item--plus"><strong>Большой выбор моделей</strong>, в том числе, морозостойких. Такие бассейны не нужно демонтировать при наступлении зимы</li>
+            <li class="advantages__item advantages__item--plus"><strong>Установка и использование</strong> возможны без использования электрооборудования и насосов</li>
+            <li class="advantages__item advantages__item--plus"><strong>Долговечность и устойчивость</strong> к внешнему механическому воздействию, благодаря трехслойному материалу</li>
+          </ul>
+          <ul class="advantages__structure">
+            <li class="advantages__item advantages__item--structure">
+              <h3 class="advantages__structure-title advantages__structure-title--internal-cladding">Внутренняя облицовка:</h3>
+              <span class="advantages__structure-description">материал ПВХ</span>
+              <span class="advantages__structure-description">имитация мозаики</span>
+            </li>
+            <li class="advantages__item advantages__item--structure">
+              <h3 class="advantages__structure-title advantages__structure-title--internal-layer">Внутренняя прослойка:</h3>
+              <span class="advantages__structure-description">стекло-волоконная сетка</span>
+            </li>
+            <li class="advantages__item advantages__item--structure">
+              <h3 class="advantages__structure-title advantages__structure-title--external-cladding">Внешняя облицовка:</h3>
+              <span class="advantages__structure-description">материал ПВХ</span>
+            </li>
+          </ul>
+        </div>
+        <div class="button__order-wrapper button__order-wrapper--advantages">
           <a class="button button__order-inner" href="#">
             <span class="button__order">Заказать бассейн INTEX</span>
           </a>
@@ -280,59 +284,61 @@
     <section class="order">
       <div class="container">
         <h2 class="main__subtitle main__subtitle--order">Мы доставим и установим бассейн на Вашем участке</h2>
-        <ul class="order__list">
-          <li class="order__item order__item-1">
-            <div class="order__item-inner">
-              <p class="order__description">Отправьте заявку с помощью формы или позвоните:</p>
-              <a class="order__phone-link" href="tel:+79192160574" rel="nofollow">+7 919 216-05-74</a>
+        <div class="order__inner">
+          <ul class="order__list">
+            <li class="order__item order__item-1">
+              <div class="order__item-inner">
+                <p class="order__description">Отправьте заявку с помощью формы или позвоните:</p>
+                <a class="order__phone-link" href="tel:+79192160574" rel="nofollow">+7 919 216-05-74</a>
+              </div>
+            </li>
+            <li class="order__item order__item-2">
+              <div class="order__item-inner">
+                <p class="order__description">Наш менеджер свяжется с вами для первичной консультации</p>
+              </div>
+            </li>
+            <li class="order__item order__item-3">
+              <div class="order__item-inner">
+                <p class="order__description">Установим бассейн, проконсультируем как это сделать самостоятельно</p>
+              </div>
+            </li>
+            <li class="order__item order__item-4">
+              <div class="order__item-inner">
+                <p class="order__description">Наполним бассейн и&nbsp;добавим химию, при должном уходе он&nbsp;прослужит целый сезон</p>
+              </div>
+            </li>
+          </ul>
+          <form class="form" action="#" method="POST">
+            <h2 class="form__title">Заполните форму</h2>
+            <p class="form__description">и наш специалист свяжется с вами <strong>в течение 30 секунд</strong></p>
+            <div class="form__inner">
+              <label class="visually-hidden" for="name-back-call">Ваше имя</label>
+              <input class="form__input form__input--username" type="text" name="username" id="name-back-call" placeholder="Ваше имя" required>
             </div>
-          </li>
-          <li class="order__item order__item-2">
-            <div class="order__item-inner">
-              <p class="order__description">Наш менеджер свяжется с вами для первичной консультации</p>
+            <div class="form__inner">
+              <label class="visually-hidden" for="phone-number-calculate">Номер телефона</label>
+              <input class="form__input form__input--phone" type="tel" name="phonecalculate" id="phone-number-calculate" placeholder="+7 (___) ___ - __ - __" pattern="(\+?\d[- .]*){7,13}" required>
             </div>
-          </li>
-          <li class="order__item order__item-3">
-            <div class="order__item-inner">
-              <p class="order__description">Установим бассейн, проконсультируем как это сделать самостоятельно</p>
+            <div class="form__inner form__inner--policy">
+              <label class="form__policy-check" for="policy-check">
+                <a class="form__policy-link" href="policy.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>
+              </label>
+              <input class="form__input-policy" type="checkbox" name="policy" id="policy-check" checked required>
             </div>
-          </li>
-          <li class="order__item order__item-4">
-            <div class="order__item-inner">
-              <p class="order__description">Наполним бассейн и&nbsp;добавим химию, при должном уходе он&nbsp;прослужит целый сезон</p>
+            <label class="visually-hidden" for="submit-btn">Отправить данные для входа</label>
+            <div class="button__order-wrapper">
+              <div class="button button__order-inner">
+                <input class="button__order button__order--form" type="submit" name="submit" id="submit-btn" value="Заказать доставку бассейна">
+              </div>
             </div>
-          </li>
-        </ul>
-        <form class="form" action="#" method="POST">
-          <h2 class="form__title">Заполните форму</h2>
-          <p class="form__description">и наш специалист свяжется с вами <strong>в течение 30 секунд</strong></p>
-          <div class="form__inner">
-            <label class="visually-hidden" for="name-back-call">Ваше имя</label>
-            <input class="form__input form__input--username" type="text" name="username" id="name-back-call" placeholder="Ваше имя" required>
-          </div>
-          <div class="form__inner">
-            <label class="visually-hidden" for="phone-number-calculate">Номер телефона</label>
-            <input class="form__input form__input--phone" type="tel" name="phonecalculate" id="phone-number-calculate" placeholder="+7 (___) ___ - __ - __" pattern="(\+?\d[- .]*){7,13}" required>
-          </div>
-          <div class="form__inner form__inner--policy">
-            <label class="form__policy-check" for="policy-check">
-              <a class="form__policy-link" href="policy.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>
-            </label>
-            <input class="form__input-policy" type="checkbox" name="policy" id="policy-check" checked required>
-          </div>
-          <label class="visually-hidden" for="submit-btn">Отправить данные для входа</label>
-          <div class="button__order-wrapper">
-            <div class="button button__order-inner">
-              <input class="button__order button__order--form" type="submit" name="submit" id="submit-btn" value="Заказать доставку бассейна">
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
     <div class="about__wrapper">
       <section class="description">
         <div class="container">
-          <h2 class="main__subtitle">С нами просто работать</h2>
+          <h2 class="main__subtitle main__subtitle--description">С нами просто работать</h2>
           <p class="main__description">официальные дилеры INTEX в Курске и Курской области</p>
           <ul class="description__list">
             <li class="description__item description__item--1">
@@ -362,7 +368,7 @@
           </ul>
           <div class="button__order-wrapper">
             <a class="button button__order-inner" href="#">
-              <span class="button__order">Заказать доставку бассейна</span>
+              <span class="button__order button__order--description">Заказать доставку бассейна</span>
             </a>
           </div>
         </div>
@@ -446,54 +452,56 @@
     </section>
     <section class="feedback">
       <div class="container">
-        <h2 class="main__subtitle">Если остался вопрос задайте его в форме ниже</h2>
+        <h2 class="main__subtitle main__subtitle--feedback">Если остался вопрос задайте его в форме ниже</h2>
         <p class="main__description">Мы всегда отвечаем на вопросы в ближайшее время</p>
-        <form class="form" action="#" method="POST">
-          <h2 class="form__title">Остались вопросы?</h2>
-          <p class="form__description">Оставьте контакты, мы перезвоним и ответим на все Ваши вопросы</p>
-          <div class="form__inner">
-            <label class="visually-hidden" for="name-back-call">Ваше имя</label>
-            <input class="form__input form__input--username" type="text" name="username" id="name-back-call" placeholder="Ваше имя" required>
-          </div>
-          <div class="form__inner">
-            <label class="visually-hidden" for="phone-number-calculate">Номер телефона</label>
-            <input class="form__input form__input--phone" type="tel" name="phonecalculate" id="phone-number-calculate" placeholder="+7 (___) ___ - __ - __" pattern="(\+?\d[- .]*){7,13}" required>
-          </div>
-          <div class="form__inner form__inner--policy">
-            <label for="policy-check">
-              <a class="form__policy-link" href="policy.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>
-            </label>
-            <input class="form__input-policy" type="checkbox" name="policy" id="policy-check" checked="" required>
-          </div>
-          <label class="visually-hidden" for="submit-btn">Отправить данные для входа</label>
-          <div class="button__order-wrapper">
-            <div class="button button__order-inner">
-              <input class="button__order button__order--form" type="submit" name="submit" id="submit-btn" value="Заказать доставку бассейна">
+        <div class="feedback__inner">
+          <form class="form form--feedback" action="#" method="POST">
+            <h2 class="form__title">Остались вопросы?</h2>
+            <p class="form__description">Оставьте контакты, мы перезвоним и ответим на все Ваши вопросы</p>
+            <div class="form__inner">
+              <label class="visually-hidden" for="name-back-call">Ваше имя</label>
+              <input class="form__input form__input--username" type="text" name="username" id="name-back-call" placeholder="Ваше имя" required>
             </div>
-          </div>
-        </form>
-        <ul class="feedback__questions">
-          <li class="feedback__item">
-            <p class="feedback__questions-title feedback__questions--text">Как добавлять жидкость?</p>
-            <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
-          </li>
-          <li class="feedback__item">
-            <p class="feedback__questions-title feedback__questions--text">Как правильно установить бассейн?</p>
-            <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
-          </li>
-          <li class="feedback__item">
-            <p class="feedback__questions-title feedback__questions--text">Зачем нужен тент и фильтр?</p>
-            <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
-          </li>
-          <li class="feedback__item">
-            <p class="feedback__questions-title feedback__questions--text">Бассейн новый?</p>
-            <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
-          </li>
-          <li class="feedback__item">
-            <p class="feedback__questions-title feedback__questions--text">Есть ли доставка?</p>
-            <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
-          </li>
-        </ul>
+            <div class="form__inner">
+              <label class="visually-hidden" for="phone-number-calculate">Номер телефона</label>
+              <input class="form__input form__input--phone" type="tel" name="phonecalculate" id="phone-number-calculate" placeholder="+7 (___) ___ - __ - __" pattern="(\+?\d[- .]*){7,13}" required>
+            </div>
+            <div class="form__inner form__inner--policy">
+              <label for="policy-check">
+                <a class="form__policy-link" href="policy.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>
+              </label>
+              <input class="form__input-policy" type="checkbox" name="policy" id="policy-check" checked="" required>
+            </div>
+            <label class="visually-hidden" for="submit-btn">Отправить данные для входа</label>
+            <div class="button__order-wrapper">
+              <div class="button button__order-inner">
+                <input class="button__order button__order--form" type="submit" name="submit" id="submit-btn" value="Заказать доставку бассейна">
+              </div>
+            </div>
+          </form>
+          <ul class="feedback__questions">
+            <li class="feedback__item">
+              <p class="feedback__questions-title feedback__questions--text">Как добавлять жидкость?</p>
+              <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__questions-title feedback__questions--text">Как правильно установить бассейн?</p>
+              <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__questions-title feedback__questions--text">Зачем нужен тент и фильтр?</p>
+              <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__questions-title feedback__questions--text">Бассейн новый?</p>
+              <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__questions-title feedback__questions--text">Есть ли доставка?</p>
+              <p class="feedback__questions-answer feedback__questions--text">Первоначальная дозировка Альгитинна составляет 150 мл на 10 м.куб. воды в бассейне. Еженедельная дозировка Альгитинна оставляет 30 мл на 10 м.куб. воды в бассейне (если бассейн находится в помещении), и 50 мл на 10 м.куб. воды в бассейне (если бассейн находится на улице).</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
