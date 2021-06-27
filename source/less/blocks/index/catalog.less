@@ -5,6 +5,10 @@
   @media (min-width: @tablet-width) {
     padding: 100px 0 146px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 104px 0 146px 0;
+  }
 }
 
 .catalog__description {
@@ -39,6 +43,10 @@
   .offset(0; 2px);
   background-color: @white;
   border-radius: 50px;
+
+  @media (min-width: @desktop-width) {
+    justify-content: normal;
+  }
 }
 
 .catalog__tab-button {
@@ -58,6 +66,10 @@
     padding: 19px 37px 17px 39px;
     .typography(20px; 24px);
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 5px 13px 18px;
+  }
 }
 
 .catalog__tab-button--active {
@@ -71,6 +83,11 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 343px;
+    padding: 0;
   }
 }
 
@@ -97,7 +114,7 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 62px;
   }
 }
 
