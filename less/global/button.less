@@ -25,11 +25,27 @@
   @media (min-width: @tablet-width) {
     min-height: 78px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 42px;
+  }
 }
 
 .button__order-wrapper--advantages {
   @media (min-width: @tablet-width) {
     margin-top: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    margin-left: 82px;
+  }
+}
+
+.button__order-wrapper--description {
+  @media (min-width: @desktop-width) {
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 
@@ -43,6 +59,16 @@
 
   &:hover {
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 294px;
+  }
+}
+
+.button__order-inner--description {
+  @media (min-width: @desktop-width) {
+    max-width: 320px;
   }
 }
 

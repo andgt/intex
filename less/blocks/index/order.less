@@ -1,9 +1,23 @@
 .order {
+  position: relative;
   .offset(30px 0; 0);
   background-color: @white4;
 
   @media (min-width: @tablet-width) {
     padding: 100px 0 127px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 885px;
+      height: 340px;
+      background-image: url("../img/desktop-img/order-background.png");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -15,6 +29,12 @@
     grid-template-columns: repeat(auto-fit, minmax(489px, 1fr));
     column-gap: 20px;
     row-gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 841px 465px;
+    column-gap: 57px;
+    margin-top: -167px;
   }
 }
 
@@ -29,6 +49,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 187px;
   }
 }
 

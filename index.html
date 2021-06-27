@@ -11,13 +11,13 @@
   <header class="header">
     <div class="container header__wrapper">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/desktop-img/logo.svg">
+        <source media="(min-width: 1400px)" srcset="img/desktop-img/logo.svg">
         <img class="header__logo" src="img/mobile-img/logo.svg" width="130" height="36" alt="Логотип Intex">
       </picture>
       <div class="contacts">
         <div class="contacts__messenger">
-          <img class="contacts__icon contacts__icon--viber" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
-          <img class="contacts__icon" src="img/icon-whatsapp.svg" width="" height="" alt="Логотип Whatsapp">
+          <img class="contacts__icon contacts__icon--whatsapp" src="img/icon-whatsapp.svg" width="" height="" alt="Логотип Whatsapp">
+          <img class="contacts__icon" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
         </div>
         <div class="contacts__phone">
           <a class="contacts__phone-link" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
@@ -75,9 +75,9 @@
           <ul class="promo__list">
             <li class="promo__item">Цены не повышаются в сезон</li>
             <li class="promo__item">При заказе бассейна скидка 37% на химию</li>
-            <li class="promo__item">Проконсультируем по уходу за бассейном, чтобы он прослужил Вам весь сезон</li>
+            <li class="promo__item">Проконсультируем по уходу за&nbsp;бассейном, чтобы он прослужил Вам весь сезон</li>
           </ul>
-          <div class="button__order-wrapper">
+          <div class="button__order-wrapper button__order-wrapper--promo">
             <a class="button button__order-inner" href="#">
               <span class="button__order">Заказать бассейн INTEX</span>
             </a>
@@ -88,7 +88,7 @@
   <main class="main">
     <section class="catalog">
       <div class="container">
-        <h2 class="main__subtitle">Каталог</h2>
+        <h2 class="main__subtitle main__subtitle--catalog">Каталог</h2>
         <p class="catalog__description">У нас вы можете приобрести каркасные бассейны INTEX в полной комплектации</p>
         <div class="catalog__tab-wrapper">
           <div class="catalog__tab-inner">
@@ -250,7 +250,7 @@
     </section>
     <section class="advantages">
       <div class="container">
-        <h2 class="main__subtitle">Почему стоит выбрать каркасный бассейн Intex</h2>
+        <h2 class="main__subtitle main__subtitle--advantages">Почему стоит выбрать каркасный бассейн Intex</h2>
         <div class="advantages__list-wrapper">
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--plus"><strong>Возможность выбрать</strong> конструкцию любой формы и размера, что позволит вписать бассейн в любой ландшафт</li>
@@ -366,8 +366,8 @@
               <p class="description__item-text">Производим доставку во все регионы России</p>
             </li>
           </ul>
-          <div class="button__order-wrapper">
-            <a class="button button__order-inner" href="#">
+          <div class="button__order-wrapper button__order-wrapper--description">
+            <a class="button button__order-inner button__order-inner--description" href="#">
               <span class="button__order button__order--description">Заказать доставку бассейна</span>
             </a>
           </div>
@@ -379,22 +379,34 @@
           <ul class="about__list">
             <li class="about__item">
               <a class="about__item-link" href="#">
-                <img class="about__img" src="img/mobile-img/about-1.jpg" width="300" height="397" alt="Фото из Инстаграма">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="img/desktop-img/about-1.jpg">
+                  <img class="about__img" src="img/mobile-img/about-1.jpg" width="318" height="407" alt="Фото из Инстаграма">
+                </picture>
               </a>
             </li>
             <li class="about__item">
               <a class="about__item-link" href="#">
-                <img class="about__img" src="img/mobile-img/about-2.jpg" width="300" height="397" alt="Фото из Инстаграма">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="img/desktop-img/about-2.jpg">
+                  <img class="about__img" src="img/mobile-img/about-2.jpg" width="318" height="407" alt="Фото из Инстаграма">
+                </picture>
               </a>
             </li>
             <li class="about__item">
               <a class="about__item-link" href="#">
-                <img class="about__img" src="img/mobile-img/about-3.jpg" width="300" height="397" alt="Фото из Инстаграма">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="img/desktop-img/about-3.jpg">
+                  <img class="about__img" src="img/mobile-img/about-3.jpg" width="318" height="407" alt="Фото из Инстаграма">
+                </picture>
               </a>
             </li>
             <li class="about__item">
               <a class="about__item-link" href="#">
-                <img class="about__img" src="img/mobile-img/about-4.jpg" width="300" height="397" alt="Фото из Инстаграма">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="img/desktop-img/about-4.jpg">
+                  <img class="about__img" src="img/mobile-img/about-4.jpg" width="318" height="407" alt="Фото из Инстаграма">
+                </picture>
               </a>
             </li>
           </ul>
