@@ -5,6 +5,8 @@
   z-index: 1;
 
   @media (min-width: @desktop-width) {
+    padding: 29px 0 60px 0;
+
     &::before {
       content: "";
       position: absolute;
@@ -12,10 +14,10 @@
       right: -280px;
       width: 100%;
       height: 100%;
-      background-image: url("../img/tablet-img/promo-background.png");
-      background-size: 724px 994px;
+      background-image: url("../img/desktop-img/promo-background.png");
+      background-size: 1271px 994px;
       background-repeat: no-repeat;
-      background-position: right top;
+      background-position: 57% top;
       z-index: -1;
     }
   }
@@ -29,6 +31,10 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     margin-bottom: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
   }
 }
 

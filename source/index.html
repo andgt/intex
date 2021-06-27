@@ -6,18 +6,45 @@
   <title>Intex</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/favicon.svg">
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/mobile-images/mobile-index.jpg");
+    }
+    /* Планшет */
+    @media (min-width: 768px) {
+      html {
+        /* Планшетный макет */
+        background-image: url("img/tablet-images/tablet-index.jpg");
+      }
+    }
+    /* Десктоп */
+    @media (min-width: 1920px) {
+      html {
+        /* Десктопный макет */
+        background-image: url("img/main.jpg");
+      }
+    }
+    /*body {
+      opacity: 0.5;
+    }*/
+  </style>
+  <!-- // Pixel Glass -->
 </head>
 <body class="page__body">
   <header class="header">
     <div class="container header__wrapper">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/desktop-img/logo.svg">
+        <source media="(min-width: 1400px)" srcset="img/desktop-img/logo.svg">
         <img class="header__logo" src="img/mobile-img/logo.svg" width="130" height="36" alt="Логотип Intex">
       </picture>
       <div class="contacts">
         <div class="contacts__messenger">
-          <img class="contacts__icon contacts__icon--viber" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
-          <img class="contacts__icon" src="img/icon-whatsapp.svg" width="" height="" alt="Логотип Whatsapp">
+          <img class="contacts__icon contacts__icon--whatsapp" src="img/icon-whatsapp.svg" width="" height="" alt="Логотип Whatsapp">
+          <img class="contacts__icon" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
         </div>
         <div class="contacts__phone">
           <a class="contacts__phone-link" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
@@ -75,9 +102,9 @@
           <ul class="promo__list">
             <li class="promo__item">Цены не повышаются в сезон</li>
             <li class="promo__item">При заказе бассейна скидка 37% на химию</li>
-            <li class="promo__item">Проконсультируем по уходу за бассейном, чтобы он прослужил Вам весь сезон</li>
+            <li class="promo__item">Проконсультируем по уходу за&nbsp;бассейном, чтобы он прослужил Вам весь сезон</li>
           </ul>
-          <div class="button__order-wrapper">
+          <div class="button__order-wrapper button__order-wrapper--promo">
             <a class="button button__order-inner" href="#">
               <span class="button__order">Заказать бассейн INTEX</span>
             </a>
