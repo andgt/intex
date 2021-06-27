@@ -105,8 +105,10 @@ a {
     min-height: 78px;
   }
 }
-.button__order-wrapper {
-  margin: 0 0 0 42px;
+@media (min-width: 1400px) {
+  .button__order-wrapper {
+    margin: 0 0 0 42px;
+  }
 }
 @media (min-width: 768px) {
   .button__order-wrapper--advantages {
@@ -537,7 +539,7 @@ a {
     margin-top: 15px;
   }
   .main-nav::before {
-    width: 120%;
+    width: 150%;
     left: -280px;
   }
 }
