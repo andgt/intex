@@ -73,25 +73,67 @@ let btnRight = document.querySelector(".slider__toggle--right");
 let sliderList = document.querySelector(".slider__list");
 let offset = 0;
 
-btnRight.onclick = function () {
-  offset += 400;
+function slider() {
+  btnRight.onclick = function () {
+    offset += 400;
 
-  if (offset > 1180) {
-    offset = 0;
+    if (offset > 1180) {
+      offset = 0;
+    }
+
+    sliderList.style.left = -offset + "px";
+  };
+
+  btnLeft.onclick = function () {
+    offset = offset - 400;
+
+    if (offset < 0) {
+      offset = 0;
+    }
+
+    sliderList.style.left = -offset + "px";
+  };
+}
+
+function mobileSlider() {
+  btnRight.onclick = function () {
+    offset += 300;
+
+    if (offset > 1180) {
+      offset = 0;
+    }
+
+    sliderList.style.left = -offset + "px";
+  };
+
+  btnLeft.onclick = function () {
+    offset = offset - 300;
+
+    if (offset < 0) {
+      offset = 0;
+    }
+
+    sliderList.style.left = -offset + "px";
+  };
+}
+
+if (window.innerWidth < 768) {
+  window.onload = mobileSlider();
+} else {
+  window.onload = slider();
+}
+
+window.addEventListener("resize", function() {
+  if (window.innerWidth > 767) {
+    slider();
   }
+});
 
-  sliderList.style.left = -offset + "px";
-};
-
-btnLeft.onclick = function () {
-  offset = offset - 400;
-
-  if (offset < 0) {
-    offset = 0;
+window.addEventListener("resize", function() {
+  if (window.innerWidth < 768) {
+    mobileSlider();
   }
-
-  sliderList.style.left = -offset + "px";
-};
+});
 
 // Кнопка наверх
 

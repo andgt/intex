@@ -5,6 +5,12 @@
   justify-content: center;
   max-width: 350px;
   .offset(0; 0 auto);
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
 }
 
 .social__title {
@@ -12,6 +18,10 @@
   font-weight: 700;
   .typography(16px; 19px);
   color: @white;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 7px;
+  }
 }
 
 .social__link {
