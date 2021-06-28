@@ -343,7 +343,7 @@ a {
   padding: 20px 0 40px 0;
   margin: 0;
   background: linear-gradient(180deg, #f1faff 90.68%, rgba(247, 248, 249, 0) 100%);
-  z-index: 1;
+  z-index: 2;
 }
 @media (min-width: 1400px) {
   .header {
@@ -436,13 +436,18 @@ a {
 .contacts__messenger-link {
   display: inline-block;
   vertical-align: middle;
+  width: 32px;
+  height: 37px;
 }
 .contacts__messenger-link--whatsapp {
+  margin-right: 10px;
+}
+.contacts__messenger-link--whatsapp-footer {
   width: 25px;
   height: 25px;
   margin-right: 9px;
 }
-.contacts__messenger-link--viber {
+.contacts__messenger-link--viber-footer {
   width: 25px;
   height: 28px;
 }
@@ -453,9 +458,6 @@ a {
 }
 .contacts__icon:hover {
   transform: scale(1.1);
-}
-.contacts__icon--whatsapp {
-  margin-right: 10px;
 }
 .contacts__phone {
   padding: 0;
@@ -607,7 +609,6 @@ a {
   padding: 20px;
   margin: 0;
   transition: 0.7s ease;
-  z-index: 10;
 }
 @media (min-width: 768px) {
   .main-nav {
@@ -639,7 +640,6 @@ a {
 .main-nav__sticky {
   position: fixed;
   top: 0;
-  z-index: 10;
   margin-top: 0;
 }
 .main-nav__sticky::before {
@@ -1898,7 +1898,6 @@ a {
   padding: 0 0 0 20px;
   margin: 0 80px 271px auto;
   list-style: none;
-  z-index: 0;
 }
 @media (max-width: 390px) {
   .advantages__structure::before {
@@ -1935,6 +1934,7 @@ a {
   .advantages__structure {
     max-width: 100%;
     padding-top: 17px;
+    z-index: 1;
   }
   .advantages__structure::before {
     top: 20px;
@@ -2178,7 +2178,6 @@ a {
   padding: 30px 0;
   margin: 0;
   background-color: #e9f5fc;
-  z-index: -1;
 }
 @media (min-width: 768px) {
   .order {
@@ -2248,7 +2247,6 @@ a {
   margin: 0 auto;
   border: 2px solid #44c2d2;
   border-radius: 20px;
-  /*z-index: 1;*/
 }
 .order__item::before {
   content: "";
@@ -2259,7 +2257,6 @@ a {
   height: 64px;
   background-repeat: no-repeat;
   background-size: 64px 64px;
-  z-index: 1;
 }
 .order__item:nth-child(n+3) {
   padding-right: 23px;

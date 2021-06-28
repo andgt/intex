@@ -88,7 +88,6 @@
   max-width: 400px;
   .offset(0 0 0 20px; 0 80px 271px auto);
   list-style: none;
-  z-index: 0;
 
   @media (max-width: 390px) {
     &::before {
@@ -125,6 +124,7 @@
   @media (min-width: @desktop-width) {
     max-width: 100%;
     padding-top: 17px;
+    z-index: 1;
 
     &::before {
       top: 20px;
