@@ -16,6 +16,11 @@
   }
 }
 
+.contacts__wrapper-footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .contacts__messenger {
   margin-right: 20px;
 
@@ -26,6 +31,22 @@
   @media (min-width: @desktop-width) {
     margin-left: 0;
   }
+}
+
+.contacts__messenger-link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contacts__messenger-link--whatsapp {
+  width: 25px;
+  height: 25px;
+  margin-right: 9px;
+}
+
+.contacts__messenger-link--viber {
+  width: 25px;
+  height: 28px;
 }
 
 .contacts__icon {
@@ -121,18 +142,27 @@
   align-items: center;
   max-width: 350px;
   .offset(0; 0 auto);
+
+  @media (min-width: @desktop-width) {
+    align-items: flex-start;
+    margin: 0;
+  }
 }
 
 .contacts__title--footer {
   margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    .typography(18px; 24px);
+  }
 }
 
 .contacts__messenger--footer {
   margin: 0 0 20px 0;
-}
 
-.contacts__icon--footer-viber {
-  margin-right: 20px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__phone--footer {
@@ -158,6 +188,11 @@
   .typography(16px; 19px);
   color: @white;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__schedule--footer {

@@ -96,7 +96,7 @@
           <p class="promo__description">с доставкой и установкой по Курску и Курской области</p>
           <div class="promo__img-wrapper">
             <picture>
-              <img class="promo__img" src="img/mobile-img/promo-img.jpg" width="700" height="478" alt="Бассейн Intex">
+              <img class="promo__img" src="img/mobile-img/promo-img.jpg" width="700" srcset="img/mobile-img/promo-img@2x.png 2x" height="478" alt="Бассейн Intex">
             </picture>
           </div>
           <ul class="promo__list">
@@ -129,7 +129,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-pool-1.png" width="233" height="141" alt="Фото бассейна">
+                    <img class="product__img" src="img/catalog__card-pool-1.png" srcset="img/catalog__card-pool-1@2x.png 2x" height="478" width="233" height="141" alt="Фото бассейна">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -146,7 +146,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-pool-2.png" width="277" height="153" alt="Фото бассейна">
+                    <img class="product__img" src="img/catalog__card-pool-2.png" srcset="img/catalog__card-pool-2@2x.png 2x" width="277" height="153" alt="Фото бассейна">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -163,7 +163,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-pool-3.png" width="201" height="152" alt="Фото бассейна">
+                    <img class="product__img" src="img/catalog__card-pool-3.png" srcset="img/catalog__card-pool-3@2x.png 2x" width="201" height="152" alt="Фото бассейна">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -180,7 +180,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-pool-4.png" width="266" height="199" alt="Фото бассейна">
+                    <img class="product__img" src="img/catalog__card-pool-4.png" srcset="img/catalog__card-pool-4@2x.png 2x" width="266" height="199" alt="Фото бассейна">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -204,7 +204,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-accessories-1.png" width="252" height="189" alt="Подстилки">
+                    <img class="product__img" src="img/catalog__card-accessories-1.png" srcset="img/catalog__card-accessories-1@2x.png 2x" width="252" height="189" alt="Подстилки">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -221,7 +221,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-accessories-2.png" width="212" height="149" alt="Тент-накидки">
+                    <img class="product__img" src="img/catalog__card-accessories-2.png" srcset="img/catalog__card-accessories-2@2x.png 2x" width="212" height="149" alt="Тент-накидки">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -238,7 +238,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-accessories-3.png" width="140" height="163" alt="Фильтр-насосы">
+                    <img class="product__img" src="img/catalog__card-accessories-3.png" srcset="img/catalog__card-accessories-3@2x.png 2x" width="140" height="163" alt="Фильтр-насосы">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -255,7 +255,7 @@
               <article class="product__card">
                 <div class="product__img-wrapper">
                   <a class="product__img-link" href="#">
-                    <img class="product__img" src="img/catalog__card-accessories-4.png" width="186" height="186" alt="Лестницы">
+                    <img class="product__img" src="img/catalog__card-accessories-4.png" srcset="img/catalog__card-accessories-4@2x.png 2x" width="186" height="186" alt="Лестницы">
                   </a>
                 </div>
                 <div class="product__info-wrapper">
@@ -518,7 +518,7 @@
     <section class="feedback">
       <div class="container">
         <h2 class="main__subtitle main__subtitle--feedback">Если остался вопрос задайте его в форме ниже</h2>
-        <p class="main__description">Мы всегда отвечаем на вопросы в ближайшее время</p>
+        <p class="main__description main__description--feedback">Мы всегда отвечаем на вопросы в ближайшее время</p>
         <div class="feedback__inner">
           <form class="form form--feedback" action="#" method="POST">
             <h2 class="form__title">Остались вопросы?</h2>
@@ -531,9 +531,13 @@
               <label class="visually-hidden" for="phone-number-calculate">Номер телефона</label>
               <input class="form__input form__input--phone" type="tel" name="phonecalculate" id="phone-number-calculate" placeholder="+7 (___) ___ - __ - __" pattern="(\+?\d[- .]*){7,13}" required>
             </div>
+            <div class="form__textarea-wrapper">
+              <label class="visually-hidden" for="textarea">Поле для ввода дополнительной информации</label>
+              <textarea class="form__textarea" name="textfield" id="textarea" placeholder="Вопрос"></textarea>
+            </div>
             <div class="form__inner form__inner--policy">
               <label for="policy-check">
-                <a class="form__policy-link" href="policy.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>
+                <a class="form__policy-link" href="policy.html" target="_blank" rel="noopener">Я даю своё согласие на обработку персональных данных</a>
               </label>
               <input class="form__input-policy" type="checkbox" name="policy" id="policy-check" checked="" required>
             </div>
@@ -572,7 +576,7 @@
   </main>
   <footer class="footer">
     <div class="footer__inner-menu">
-      <div class="container">
+      <div class="container footer__container">
         <img class="footer__logo" src="img/footer-logo.svg" width="211" height="130" alt="Логотип Intex">
         <div class="footer__nav-block">
           <div class="footer__wrapper">
@@ -632,28 +636,36 @@
             </ul>
           </div>
         </div>
-        <div class="contacts contacts--footer">
-          <h3 class="contacts__title contacts__title--footer footer__menu-title">Контакты</h3>
-          <div class="contacts__messenger contacts__messenger--footer">
-            <img class="contacts__icon contacts__icon--footer-viber" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
-            <img class="contacts__icon" src="img/icon-whatsapp.svg" width="" height="" alt="Логотип Whatsapp">
-          </div>
-          <div class="contacts__phone contacts__phone--footer">
-            <a class="contacts__phone-link contacts__phone-link--footer" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
-            <div class="contacts__wrapper-schedule">
-              <h3 class="contacts__title-schedule">Режим работы:</h3>
-              <p class="contacts__schedule contacts__schedule--footer">пн-вс 09:00-22:00</p>
+        <div class="contacts__wrapper-footer">
+          <div class="contacts contacts--footer">
+            <h3 class="contacts__title contacts__title--footer footer__menu-title">Контакты</h3>
+            <div class="contacts__messenger contacts__messenger--footer">
+              <a class="contacts__phone-link contacts__phone-link--footer" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
+              <a class="contacts__messenger-link contacts__messenger-link--whatsapp" href="#" target="_blank" rel="nofollow">
+                <img class="contacts__icon contacts__icon--footer-whatsapp" src="img/icon-footer-whatsapp.svg" width="25" height="25" alt="Логотип Whatsapp">
+              </a>
+              <a class="contacts__messenger-link contacts__messenger-link--viber" href="#" target="_blank" rel="nofollow">
+                <img class="contacts__icon contacts__icon--footer-viber" src="img/icon-footer-viber.svg" width="25" height="28" alt="Логотип Viber">
+              </a>
             </div>
-            <div class="contacts__wrapper-social">
-              <img src="">
+            <div class="contacts__phone contacts__phone--footer">
+              <div class="contacts__wrapper-schedule">
+                <h3 class="contacts__title-schedule">Режим работы:</h3>
+                <p class="contacts__schedule contacts__schedule--footer">пн-вс 09:00-22:00</p>
+              </div>
+              <div class="contacts__wrapper-social">
+                <img src="">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="social">
-          <h3 class="social__title">Мы в соцсетях:</h3>
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Ссылка на Инстаграм</span>
-          </a>
+          <div class="social">
+            <h3 class="social__title">Мы в соцсетях:</h3>
+            <div class="social__icon-wrapper">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Ссылка на Инстаграм</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
