@@ -6,6 +6,33 @@
   <title>Intex</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/favicon.svg">
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* По умолчанию показывается мобильный макет */
+      /*background-image: url("img/main.jpg");*/
+    }
+    /* Планшет */
+    @media (min-width: 768px) {
+      html {
+        /* Планшетный макет */
+        /*background-image: url("img/tablet-images/tablet-index.jpg");*/
+      }
+    }
+    /* Десктоп */
+    @media (min-width: 1400px) {
+      html {
+        /* Десктопный макет */
+        background-image: url("img/main.jpg");
+      }
+    }
+    /*body {
+      opacity: 0.5;
+    }*/
+  </style>
+  <!-- // Pixel Glass -->
 </head>
 <body class="page__body">
   <header class="header">
@@ -417,44 +444,70 @@
       <div class="container">
         <h2 class="main__subtitle main__subtitle--reviews">Отзывы довольных клиентов:</h2>
         <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item slider__item--show">
-              <article class="reviews__card">
-                <div class="reviews__inner reviews__inner--title">
-                  <h3 class="reviews__title">Богатырев Евгений</h3>
-                  <time class="reviews__date" datetime="2020-04-05">05 апреля 2020</time>
-                </div>
-                <div class="reviews__inner reviews__inner--text">
-                  <p class="reviews__text">Этим письмом выражаю благодарность Intex за предоставленные услуги, а также за внимательное и доброжелательное отношение сотрудников. Mы сотрудничаем достаточно недавно, но уже успели оценить надежность и качество выполненной работы. Intex проявили себя как профессиональная компания...</p>
-                  <a class="reviews__link" href="">Смотреть оригинал</a>
-                </div>
-              </article>
-            </li>
-            <li class="slider__item">
-              <article class="reviews__card">
-                <div class="reviews__inner reviews__inner--title">
-                  <h3 class="reviews__title">Димитров Александр</h3>
-                  <time class="reviews__date" datetime="2020-04-05">17 мая 2020</time>
-                </div>
-                <div class="reviews__inner reviews__inner--text">
-                  <p class="reviews__text">Всё пришло как было указано, курьер доставил, стоимость та же, которая была заранее обговорена. Весь путь посылка отслеживалась, упакована была хорошо. Брак не обнаружили. Как наберём дополню отзыв</p>
-                  <a class="reviews__link" href="">Смотреть оригинал</a>
-                </div>
-              </article>
-            </li>
-            <li class="slider__item">
-              <article class="reviews__card">
-                <div class="reviews__inner reviews__inner--title">
-                  <h3 class="reviews__title">Карасёв Андрей</h3>
-                  <time class="reviews__date" datetime="2020-04-05">20 июня 2020</time>
-                </div>
-                <div class="reviews__inner reviews__inner--text">
-                  <p class="reviews__text">Собрали один раз три года назад весной и больше ни разу не разбирали. Стоит круглый год на открытом месте, по осени сливаю воду. Моем каждую весну с хлоркой, часа три на это уходит. Летом - фильтр, пылесос, сачок, химия и пр. Каркас неубиваемый, материал тоже Рекомендую. Окупил себя на 100%.</p>
-                  <a class="reviews__link" href="">Смотреть оригинал</a>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <div class="slider__wrapper">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <article class="reviews__card">
+                  <div class="reviews__inner reviews__inner--title">
+                    <h3 class="reviews__title">Богатырев Евгений</h3>
+                    <time class="reviews__date" datetime="2020-04-05">05 апреля 2020</time>
+                  </div>
+                  <div class="reviews__inner reviews__inner--text">
+                    <p class="reviews__text">Этим письмом выражаю благодарность Intex за предоставленные услуги, а также за внимательное и доброжелательное отношение сотрудников. Mы сотрудничаем достаточно недавно, но уже успели оценить надежность и качество выполненной работы. Intex проявили себя как профессиональная компания...</p>
+                    <a class="reviews__link" href="">Смотреть оригинал</a>
+                  </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="reviews__card">
+                  <div class="reviews__inner reviews__inner--title">
+                    <h3 class="reviews__title">Димитров Александр</h3>
+                    <time class="reviews__date" datetime="2020-04-05">17 мая 2020</time>
+                  </div>
+                  <div class="reviews__inner reviews__inner--text">
+                    <p class="reviews__text">Всё пришло как было указано, курьер доставил, стоимость та же, которая была заранее обговорена. Весь путь посылка отслеживалась, упакована была хорошо. Брак не обнаружили. Как наберём дополню отзыв</p>
+                    <a class="reviews__link" href="">Смотреть оригинал</a>
+                  </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="reviews__card">
+                  <div class="reviews__inner reviews__inner--title">
+                    <h3 class="reviews__title">Карасёв Андрей</h3>
+                    <time class="reviews__date" datetime="2020-04-05">20 июня 2020</time>
+                  </div>
+                  <div class="reviews__inner reviews__inner--text">
+                    <p class="reviews__text">Собрали один раз три года назад весной и больше ни разу не разбирали. Стоит круглый год на открытом месте, по осени сливаю воду. Моем каждую весну с хлоркой, часа три на это уходит. Летом - фильтр, пылесос, сачок, химия и пр. Каркас неубиваемый, материал тоже Рекомендую. Окупил себя на 100%.</p>
+                    <a class="reviews__link" href="">Смотреть оригинал</a>
+                  </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="reviews__card">
+                  <div class="reviews__inner reviews__inner--title">
+                    <h3 class="reviews__title">Петров Александр</h3>
+                    <time class="reviews__date" datetime="2020-04-05">17 мая 2020</time>
+                  </div>
+                  <div class="reviews__inner reviews__inner--text">
+                    <p class="reviews__text">Всё пришло как было указано, курьер доставил, стоимость та же, которая была заранее обговорена. Весь путь посылка отслеживалась, упакована была хорошо. Брак не обнаружили. Как наберём дополню отзыв</p>
+                    <a class="reviews__link" href="">Смотреть оригинал</a>
+                  </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="reviews__card">
+                  <div class="reviews__inner reviews__inner--title">
+                    <h3 class="reviews__title">Иванов Андрей</h3>
+                    <time class="reviews__date" datetime="2020-04-05">20 июня 2020</time>
+                  </div>
+                  <div class="reviews__inner reviews__inner--text">
+                    <p class="reviews__text">Собрали один раз три года назад весной и больше ни разу не разбирали. Стоит круглый год на открытом месте, по осени сливаю воду. Моем каждую весну с хлоркой, часа три на это уходит. Летом - фильтр, пылесос, сачок, химия и пр. Каркас неубиваемый, материал тоже Рекомендую. Окупил себя на 100%.</p>
+                    <a class="reviews__link" href="">Смотреть оригинал</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
           <div class="slider__controls">
             <button class="slider__toggle slider__toggle--left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
             <button class="slider__toggle slider__toggle--right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
