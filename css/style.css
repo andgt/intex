@@ -1195,9 +1195,6 @@ a {
     min-height: 505px;
     margin: 0 20px 0 0;
   }
-  .slider__item:last-child {
-    margin-right: 0;
-  }
 }
 .slider__controls {
   position: relative;

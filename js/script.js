@@ -67,17 +67,29 @@ tab();
 
 // Слайдер
 
-let sliderItem = document.querySelectorAll(".slider__item");
+let sliderItems = document.querySelectorAll(".slider__item");
 let btnLeft = document.querySelector(".slider__toggle--left");
 let btnRight = document.querySelector(".slider__toggle--right");
 let sliderList = document.querySelector(".slider__list");
 let offset = 0;
+let offsetPlus = 0;
+let offsetMax;
+let offsetSlideMax;
 
 function slider() {
-  btnRight.onclick = function () {
-    offset += 400;
+  let sliderWidthDesktop;
+  for (let sliderItem of sliderItems) {
+    offsetPlus += sliderItem.offsetWidth;
+    offsetMax = sliderItem.offsetWidth * 2;
+    sliderWidthDesktop = sliderItem.offsetWidth + parseInt(getComputedStyle(sliderItem).marginRight);
+  }
 
-    if (offset > 1180) {
+  offsetSlideMax = offsetPlus - offsetMax;
+
+  btnRight.onclick = function () {
+    offset += sliderWidthDesktop;
+
+    if (offset > offsetSlideMax) {
       offset = 0;
     }
 
@@ -85,7 +97,7 @@ function slider() {
   };
 
   btnLeft.onclick = function () {
-    offset = offset - 400;
+    offset = offset - sliderWidthDesktop;
 
     if (offset < 0) {
       offset = 0;
@@ -96,10 +108,16 @@ function slider() {
 }
 
 function mobileSlider() {
-  btnRight.onclick = function () {
-    offset += 300;
+  let sliderWidth;
+  for (let sliderItem of sliderItems) {
+    sliderWidth = sliderItem.offsetWidth + (parseInt(getComputedStyle(sliderItem).marginRight) + parseInt(getComputedStyle(sliderItem).marginLeft));
+    offsetPlus += sliderItem.offsetWidth;
+  }
 
-    if (offset > 1180) {
+  btnRight.onclick = function () {
+    offset += sliderWidth;
+
+    if (offset > offsetPlus) {
       offset = 0;
     }
 
@@ -107,7 +125,7 @@ function mobileSlider() {
   };
 
   btnLeft.onclick = function () {
-    offset = offset - 300;
+    offset = offset - sliderWidth;
 
     if (offset < 0) {
       offset = 0;
@@ -117,20 +135,20 @@ function mobileSlider() {
   };
 }
 
-if (window.innerWidth < 768) {
+if (window.innerWidth < 1400) {
   window.onload = mobileSlider();
 } else {
   window.onload = slider();
 }
 
 window.addEventListener("resize", function() {
-  if (window.innerWidth > 767) {
+  if (window.innerWidth > 1399) {
     slider();
   }
 });
 
 window.addEventListener("resize", function() {
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 1400) {
     mobileSlider();
   }
 });
