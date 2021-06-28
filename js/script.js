@@ -73,23 +73,19 @@ let btnRight = document.querySelector(".slider__toggle--right");
 let sliderList = document.querySelector(".slider__list");
 let offset = 0;
 let offsetPlus = 0;
-let offsetMax;
-let offsetSlideMax;
 
 function slider() {
   let sliderWidthDesktop;
+  let sliderItemMax;
   for (let sliderItem of sliderItems) {
-    offsetPlus += sliderItem.offsetWidth;
-    offsetMax = sliderItem.offsetWidth * 2;
     sliderWidthDesktop = sliderItem.offsetWidth + parseInt(getComputedStyle(sliderItem).marginRight);
+    sliderItemMax = sliderWidthDesktop * (sliderItems.length-3);
   }
-
-  offsetSlideMax = offsetPlus - offsetMax;
 
   btnRight.onclick = function () {
     offset += sliderWidthDesktop;
 
-    if (offset > offsetSlideMax) {
+    if (offset > sliderItemMax) {
       offset = 0;
     }
 
@@ -109,15 +105,16 @@ function slider() {
 
 function mobileSlider() {
   let sliderWidth;
+  let sliderItemMaxMobile;
   for (let sliderItem of sliderItems) {
     sliderWidth = sliderItem.offsetWidth + (parseInt(getComputedStyle(sliderItem).marginRight) + parseInt(getComputedStyle(sliderItem).marginLeft));
-    offsetPlus += sliderItem.offsetWidth;
+    sliderItemMaxMobile = sliderWidth * (sliderItems.length-1);
   }
 
   btnRight.onclick = function () {
     offset += sliderWidth;
 
-    if (offset > offsetPlus) {
+    if (offset > sliderItemMaxMobile) {
       offset = 0;
     }
 
