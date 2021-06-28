@@ -150,3 +150,28 @@ window.onscroll = function () {
 scrollUp.onclick = function (evt) {
   window.scrollTo(0, 0);
 };
+
+
+// Фиксированное меню
+
+let logo = document.querySelector(".header__logo");
+
+window.onscroll = function () {
+  if (window.pageYOffset > 10) {
+    mainNav.classList.add("main-nav__sticky");
+  } else {
+    mainNav.classList.remove("main-nav__sticky");
+  }
+}
+
+if (window.innerWidth < 768) {
+  window.onscroll = function () {
+    if (window.pageYOffset > 10) {
+      mainNav.classList.add("main-nav__sticky");
+      logo.classList.add("header__logo-sticky");
+    } else {
+      mainNav.classList.remove("main-nav__sticky");
+      logo.classList.remove("header__logo-sticky");
+    }
+  }
+}

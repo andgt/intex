@@ -46,3 +46,12 @@
     height: 55px;
   }
 }
+
+@media (max-width: @mobile-width-only) {
+  .header__logo-sticky {
+    position: fixed;
+    top: 10px;
+    z-index: 50;
+    background-color: @white;
+  }
+}
