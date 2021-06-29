@@ -22,7 +22,8 @@ buttonToggle.addEventListener('click', function() {
 let menuItemsAccesories = document.querySelector(".main-nav__link--accessories");
 let submenu = document.querySelector(".main-nav__submenu");
 
-menuItemsAccesories.onclick = function() {
+menuItemsAccesories.onclick = function(evt) {
+  evt.preventDefault();
   submenu.classList.toggle("main-nav__menu-item-open");
 };
 
