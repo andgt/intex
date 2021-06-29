@@ -2406,6 +2406,7 @@ a {
        column-gap: 15px;
   row-gap: 49px;
   align-items: stretch;
+  counter-reset: list;
   padding: 0;
   margin: 0 0 57px 0;
   list-style: none;
@@ -2425,36 +2426,34 @@ a {
   position: relative;
   max-width: 188px;
   min-height: 170px;
-  padding: 50px 30px 0 29px;
+  padding: 50px 30px 10px 29px;
   margin: 0 auto;
   border: 2px solid #44c2d2;
   border-radius: 20px;
 }
 .order__item::before {
-  content: "";
+  content: counter(list) " ";
+  counter-increment: list;
   position: absolute;
   top: -32px;
   left: 62px;
   width: 64px;
   height: 64px;
-  background-repeat: no-repeat;
-  background-size: 64px 64px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 10px 10px 10px 21px;
+  font-size: 35px;
+  line-height: 43px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #479dd4 0%, #43c3d1 100%);
+  border-radius: 30px;
+}
+.order__item:first-child::before {
+  padding: 10px 10px 10px 25px;
 }
 .order__item:nth-child(n+3) {
   padding-right: 23px;
   padding-left: 28px;
-}
-.order__item-4::before {
-  background-image: url("../img/icon-order-item-4.svg");
-}
-.order__item-3::before {
-  background-image: url("../img/icon-order-item-3.svg");
-}
-.order__item-2::before {
-  background-image: url("../img/icon-order-item-2.svg");
-}
-.order__item-1::before {
-  background-image: url("../img/icon-order-item-1.svg");
 }
 .order__item-inner {
   padding: 0;
