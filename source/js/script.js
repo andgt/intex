@@ -19,16 +19,11 @@ buttonToggle.addEventListener('click', function() {
 
 // Подменю
 
-let menuItems = document.querySelectorAll(".main-nav__link");
-let submenus = document.querySelectorAll(".main-nav__submenu");
+let menuItemsAccesories = document.querySelector(".main-nav__link--accessories");
+let submenu = document.querySelector(".main-nav__submenu");
 
-for (let menuItem of menuItems) {
-  menuItem.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    for (let submenu of submenus) {
-      submenu.classList.toggle("main-nav__menu-item-open");
-    }
-  });
+menuItemsAccesories.onclick = function() {
+  submenu.classList.toggle("main-nav__menu-item-open");
 };
 
 // Табы

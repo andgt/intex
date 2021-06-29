@@ -2946,5 +2946,44 @@ a {
     padding-left: 39px;
   }
 }
+.header--about {
+  padding-bottom: 255px;
+  background-image: url("../img/about/promo-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__logo-link {
+  width: 130px;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .header__logo-link {
+    width: 350px;
+  }
+}
+.description-about {
+  padding-bottom: 158px;
+  background-image: url("../img/about/description-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promo__about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.promo__title--about {
+  padding-right: 0;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  color: #476273;
+}
+.promo__description--about {
+  padding-right: 0;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 55px;
+}
 
 /*# sourceMappingURL=style.css.map */
