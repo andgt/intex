@@ -1982,7 +1982,7 @@ a {
 }
 @media (min-width: 1400px) {
   .advantages {
-    padding-bottom: 159px;
+    padding-bottom: 163px;
   }
 }
 @media (min-width: 768px) {
@@ -2346,18 +2346,36 @@ a {
 @media (min-width: 768px) {
   .order {
     padding: 100px 0 127px 0;
+    background-color: transparent;
+  }
+  .order::before,
+  .order::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  .order::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e9f5fc;
+    background-image: url("../img/tablet-img/order-background-figure.svg");
+    background-size: cover;
+    background-position: left top;
+    z-index: -1;
   }
 }
 @media (min-width: 1400px) {
   .order::before {
-    content: "";
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 885px;
     height: 340px;
     background-image: url("../img/desktop-img/order-background.png");
-    background-repeat: no-repeat;
+  }
+  .order::after {
+    background-size: 1816px 711px;
   }
 }
 .order__inner {
