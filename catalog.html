@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg">
+  </head>
+  <body class="page__body">
+    <header class="header header__catalog">
+      <div class="container header__wrapper header__catalog-wrapper">
+        <picture>
+          <source media="(min-width: 1400px)" srcset="img/desktop-img/logo.svg">
+          <img class="header__logo" src="img/mobile-img/logo.svg" width="130" height="36" alt="Логотип Intex">
+        </picture>
+        <div class="contacts">
+          <div class="contacts__messenger">
+            <a class="contacts__messenger-link contacts__messenger-link--whatsapp" href="https://api.whatsapp.com/send?phone=79192160574" target="_blank" rel="nofollow">
+              <img class="contacts__icon" src="img/icon-whatsapp.svg" width="32" height="37" alt="Логотип Whatsapp">
+            </a>
+            <a class="contacts__messenger-link" href="viber://chat?number=79192160574" target="_blank" rel="nofollow">
+              <img class="contacts__icon" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
+            </a>
+          </div>
+          <div class="contacts__phone">
+            <a class="contacts__phone-link" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
+            <p class="contacts__schedule">пн-вс 09:00-22:00</p>
+          </div>
+          <a class="contacts__btn-back-call" href="#">Заказать звонок</a>
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="button main-nav__button-toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="about.html" target="_blank" rel="nofollow">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Бассейны</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--accessories" href="#">Аксессуары</a>
+              <div class="main-nav__submenu">
+                <ul class="main-nav__submenu-list">
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Подстилки</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Тент-накидки</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Фильтр-насосы</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Лестницы</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Скиммеры</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Химия для бассейнов</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Услуги</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item"><a href="index.html" tabindex="0">Главная</a></li>
+          <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs-item"><a href="#">Бассейны Intex</a></li>
+          <li class="breadcrumbs-item">Каркасные бассейны</li>
+        </ul>
+      </div>
+      <div class="catalog__container">
+        <div class="filter">
+          <section class="filter__pool">
+            <h2 class="filter__title">Бассейны INTEX</h2>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <a class="filter__link" href="#">Каркасные бассейны Intex</a>
+              </li>
+            </ul>
+          </section>
+          <section class="filter__accessories">
+            <h2 class="filter__title">Аксессуары для бассейна</h2>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <a class="filter__link" href="#">Подстилки</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Тент-накидки</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Фильтр-насосы</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Лестницы</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Скиммеры</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Химия для бассейнов</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="catalog">
+          <h1 class="catalog__title">Каркасные бассейны</h1>
+          <header class="sorting">
+            <h2 class="sorting__title">Сортировка:</h2>
+            <ul class="sorting__list">
+              <li class="sorting__item">
+                <a class="sorting__link" href="#">Популярные</a>
+              </li>
+              <li class="sorting__item">
+                <a class="sorting__link" href="#">Цена по возрастанию</a>
+              </li>
+            </ul>
+          </header>
+          <ul class="catalog__list">
+            <li class="catalog__item product">
+              <article class="product__card">
+                <div class="product__img-wrapper">
+                  <a class="product__img-link" href="#">
+                    <img class="product__img" src="img/catalog__card-pool-1.png" srcset="img/catalog__card-pool-1@2x.png 2x" height="478" width="233" height="141" alt="Фото бассейна">
+                  </a>
+                </div>
+                <div class="product__info-wrapper">
+                  <p class="product__article">Арт: 28220</p>
+                  <h3 class="product__title">
+                    <a class="product__title-link" href="#">Каркасный бассейн Prism Frame</a>
+                  </h3>
+                  <p class="product__size"><strong>Размер:</strong> 366 х 99 см</p>
+                  <p class="product__price">22 199</p>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item product">
+              <article class="product__card">
+                <div class="product__img-wrapper">
+                  <a class="product__img-link" href="#">
+                    <img class="product__img" src="img/catalog__card-pool-2.png" srcset="img/catalog__card-pool-2@2x.png 2x" width="277" height="153" alt="Фото бассейна">
+                  </a>
+                </div>
+                <div class="product__info-wrapper">
+                  <p class="product__article">Арт: 28220</p>
+                  <h3 class="product__title">
+                    <a class="product__title-link" href="#">Прямоугольный каркасный бассейн</a>
+                  </h3>
+                  <p class="product__size"><strong>Размер:</strong> 450 х 220 х 84 см</p>
+                  <p class="product__price">16 000</p>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item product">
+              <article class="product__card">
+                <div class="product__img-wrapper">
+                  <a class="product__img-link" href="#">
+                    <img class="product__img" src="img/catalog__card-pool-3.png" srcset="img/catalog__card-pool-3@2x.png 2x" width="201" height="152" alt="Фото бассейна">
+                  </a>
+                </div>
+                <div class="product__info-wrapper">
+                  <p class="product__article">Арт: 28220</p>
+                  <h3 class="product__title">
+                    <a class="product__title-link" href="#">Каркасный бассейн Prism Frame</a>
+                  </h3>
+                  <p class="product__size"><strong>Размер:</strong> 366 x 76 см</p>
+                  <p class="product__price">16 570</p>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item product">
+              <article class="product__card">
+                <div class="product__img-wrapper">
+                  <a class="product__img-link" href="#">
+                    <img class="product__img" src="img/catalog__card-pool-4.png" srcset="img/catalog__card-pool-4@2x.png 2x" width="266" height="199" alt="Фото бассейна">
+                  </a>
+                </div>
+                <div class="product__info-wrapper">
+                  <p class="product__article">Арт: 28220</p>
+                  <h3 class="product__title">
+                    <a class="product__title-link" href="#">Прямоугольный бассейн Intex</a>
+                  </h3>
+                  <p class="product__size"><strong>Размер:</strong> 300 х 200 х 75 см</p>
+                  <p class="product__price">12 690</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link" href="catalog.html">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="blank.html">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="blank.html">3</a>
+            </li>
+            <div class="slider__controls">
+              <button class="slider__toggle slider__toggle--left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
+              <button class="slider__toggle slider__toggle--right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
+            </div>
+          </ul>
+        </div>
+        <div class="description__product">
+        <div class="page-inner">
+          <article class="description__product-article">
+            <h2 class="description__product-title">Пара слов о Перфораторах</h2>
+            <p class="description__product-text">
+              Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+            <p class="description__product-text">
+              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+            </p>
+            <p class="description__product-text">
+              В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
+          </article>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner-menu">
+        <div class="container footer__container">
+          <img class="footer__logo" src="img/footer-logo.svg" width="211" height="130" alt="Логотип Intex">
+          <div class="footer__nav-block">
+            <div class="footer__wrapper">
+              <div class="footer__menu-inner">
+                <h3 class="footer__menu-title">О нас</h3>
+                <ul class="footer__menu footer__menu--about">
+                  <li class="footer__item">
+                    <a class="footer__menu-link" href="">Доставка и оплата</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__menu-link" href="">Блог</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__menu-link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu-inner footer__menu-inner--services">
+                <h3 class="footer__menu-title">Услуги</h3>
+                <ul class="footer__menu footer__menu--services">
+                  <li class="footer__item">
+                    <a class="footer__menu-link" href="">Доставка</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__menu-link" href="">Установка</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__menu-link" href="">Обслуживание</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__wrapper">
+              <h3 class="footer__menu-title">Каталог</h3>
+              <ul class="footer__menu footer__menu--catalog">
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="">Каркасные бассейны INTEX</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="">Подстилки</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="">Тент-накидки</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="">Фильтр-насосы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="">Лестницы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="">Скиммеры</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="">Химия для бассейнов</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts__wrapper-footer">
+            <div class="contacts contacts--footer">
+              <h3 class="contacts__title contacts__title--footer footer__menu-title">Контакты</h3>
+              <div class="contacts__messenger contacts__messenger--footer">
+                <a class="contacts__phone-link contacts__phone-link--footer" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
+                <a class="contacts__messenger-link contacts__messenger-link--whatsapp-footer" href="#" target="_blank" rel="nofollow">
+                  <img class="contacts__icon contacts__icon--footer-whatsapp" src="img/icon-footer-whatsapp.svg" width="25" height="25" alt="Логотип Whatsapp">
+                </a>
+                <a class="contacts__messenger-link contacts__messenger-link--viber-footer" href="#" target="_blank" rel="nofollow">
+                  <img class="contacts__icon contacts__icon--footer-viber" src="img/icon-footer-viber.svg" width="25" height="28" alt="Логотип Viber">
+                </a>
+              </div>
+              <div class="contacts__phone contacts__phone--footer">
+                <div class="contacts__wrapper-schedule">
+                  <h3 class="contacts__title-schedule">Режим работы:</h3>
+                  <p class="contacts__schedule contacts__schedule--footer">пн-вс 09:00-22:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="social">
+              <h3 class="social__title">Мы в соцсетях:</h3>
+              <div class="social__icon-wrapper">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Ссылка на Инстаграм</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__inner-info">
+        <div class="container">
+          <div class="footer__info-block">
+            <a class="footer__info-text footer__policy" href="#" target="_blank" rel="nofollow">Политика конфиденциальности</a>
+            <p class="footer__info-text footer__copyright">Simferopol © Copyright 2021</p>
+            <div class="footer__dev">
+              <p class="footer__info-text footer__dev-text">Сделано в</p>
+              <a class="footer__dev-logo" href="#">
+                <img src="img/logo-sheer.svg" width="50" height="18" alt="Логотип веб-студии Sheer">
+                <span class="visually-hidden">Логотип веб-студии Sheer</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button__scroll-up" type="button">
+        <span class="visually-hidden">Перейти в начало страницы</span>
+      </button>
+    </footer>
+    <script src="js/script-catalog.js"></script>
+  </body>
+</html>
