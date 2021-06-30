@@ -1700,6 +1700,7 @@ a {
 .footer__menu-link:focus::before {
   background-color: #ffea00;
   transition: 0.3s ease;
+  opacity: 0.5;
 }
 .footer__menu-link:active {
   opacity: 0.7;
