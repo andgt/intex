@@ -1,19 +1,30 @@
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  order: 3;
-  .offset(0 10px; 0 0 40px 0);
+  flex-direction: column;
+  align-items: flex-end;
+  flex-grow: 1;
+  order: 2;
+  width: 60%;
+  .offset(0 70px 0 0; 0 0 0 auto);
 
   @media (min-width: @tablet-width) {
-    flex-grow: 1;
-    order: 2;
+    flex-direction: row;
+    align-items: unset;
     margin: 0;
+    padding: 0 10px;
   }
 
   @media (min-width: @desktop-width) {
+    flex-grow: 0;
+    width: 485px;
     padding: 0;
     margin-left: 527px;
   }
+}
+
+.contacts--main-nav {
+  display: none;
 }
 
 .contacts__wrapper-footer {
@@ -22,9 +33,11 @@
 }
 
 .contacts__messenger {
-  margin-right: 20px;
+  order: 2;
+  margin: 0 20px 0 0;
 
   @media (min-width: @tablet-width) {
+    order: 1;
     margin-left: auto;
   }
 
@@ -41,7 +54,11 @@
 }
 
 .contacts__messenger-link--whatsapp {
-  margin-right: 10px;
+  margin-right: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
 }
 
 .contacts__messenger-link--whatsapp-footer {
@@ -57,19 +74,28 @@
 
 .contacts__icon {
   display: inline-block;
+  width: 25px;
+  height: 28.9px;
   cursor: pointer;
   transition: 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 37px;
+  }
 }
 
 .contacts__phone {
-  .offset(0; 0 15px 30px 0);
+  order: 1;
+  .offset(0; 0 0 10px 0);
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    order: 2;
+    margin: 0 15px 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,9 +105,9 @@
 
 .contacts__phone-link {
   display: block;
-  .offset(0; 0 0 10px 0);
+  .offset(0; 0 0 3px 0);
   font-weight: 700;
-  .typography(20px; 24px);
+  .typography(14px; 18px);
   color: @grey4;
   transition: 0.3s ease;
 
@@ -94,6 +120,11 @@
     opacity: 0.7;
   }
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+    .typography(20px; 24px);
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 3px;
   }
@@ -101,8 +132,11 @@
 
 .contacts__schedule {
   .offset(0; 0);
-  .typography(14px; 17px);
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .typography(14px; 17px);
+  }
 
   @media (min-width: @desktop-width) {
     text-align: right;
@@ -110,6 +144,7 @@
 }
 
 .contacts__btn-back-call {
+  order: 4;
   width: 100%;
   max-width: 320px;
   .offset(13px 24px 18px 24px; 0 auto auto auto);
@@ -130,12 +165,25 @@
   }
 
   @media (min-width: @tablet-width) {
+    order: 3;
     max-width: 190px;
     margin: 0 0 auto 0;
   }
 
   @media (min-width: @desktop-width) {
     padding: 13px 24px 14px 24px;
+  }
+}
+
+.contacts__btn-back-call--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.contacts__btn-back-call--tablet {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -201,4 +249,36 @@
   .typography(16px; 19px);
   color: @white;
   text-align: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened .contacts--main-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .contacts__phone-link--main-nav {
+    .typography(20px; 24px);
+  }
+
+  .contacts__schedule--main-nav {
+    .typography(14px; 17px);
+  }
+
+  .contacts__icon--main-nav {
+    width: 32px;
+    height: 37px;
+  }
+
+  .contacts__messenger--main-nav {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }

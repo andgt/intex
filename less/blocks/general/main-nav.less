@@ -1,15 +1,14 @@
 .main-nav {
   position: relative;
-  order: 2;
+  flex-grow: 1;
+  width: 100%;
+  order: 3;
   .offset(20px; 0);
   transition: 0.7s ease;
 
   @media (min-width: @tablet-width) {
-    flex-grow: 1;
-    width: 100%;
     padding: 20px 0;
     margin: 60px 0 0 0;
-    order: 3;
 
     &::before {
       content: "";
@@ -237,7 +236,7 @@
 
 .main-nav__button-toggle {
   position: absolute;
-  top: -42px;
+  top: -85px;
   right: 0;
   .offset(0; 0);
   width: 36px;
@@ -346,6 +345,7 @@
     opacity: 1;
     height: auto;
     transition: all 0.7s ease;
+    margin-bottom: 20px;
   }
 
   .main-nav--closed .main-nav__item:nth-child(1) {
