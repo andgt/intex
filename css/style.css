@@ -360,7 +360,6 @@ a {
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  /*flex-direction: column;*/
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
@@ -823,8 +822,8 @@ a {
   display: inline-block;
   padding: 5px;
   margin: 0;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   color: #265c7e;
   text-transform: uppercase;
   transition: 0.4s ease;
