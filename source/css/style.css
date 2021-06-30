@@ -941,6 +941,19 @@ a {
     transition: 0.6s ease;
   }
 }
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sorting {
+  padding: 0;
+  margin: 0;
+}
+.sorting__list {
+  padding: 0;
+  margin: 0;
+}
 .product__card {
   display: flex;
   flex-direction: column;
@@ -3058,6 +3071,16 @@ a {
   .reviews_about {
     padding-bottom: 100px;
   }
+}
+.header__catalog {
+  padding-bottom: 60px;
+}
+.header__catalog-wrapper {
+  margin-bottom: 0;
+}
+.description {
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
