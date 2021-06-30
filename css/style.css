@@ -2946,11 +2946,13 @@ a {
     padding-left: 39px;
   }
 }
-.header--about {
-  padding-bottom: 255px;
-  background-image: url("../img/about/promo-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media (min-width: 1400px) {
+  .header--about {
+    padding-bottom: 175px;
+    background-image: url("../img/about/promo-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .header__logo-link {
   width: 130px;
@@ -2962,28 +2964,100 @@ a {
   }
 }
 .description-about {
-  padding-bottom: 158px;
+  padding-bottom: 60px;
   background-image: url("../img/about/description-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.promo__about {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+@media (min-width: 768px) {
+  .description-about {
+    padding-bottom: 138px;
+  }
+}
+.description__item-text--about {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (min-width: 1400px) {
+  .promo__about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 .promo__title--about {
   padding-right: 0;
   font-weight: 300;
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 25px;
+  line-height: 35px;
   color: #476273;
+}
+@media (min-width: 768px) {
+  .promo__title--about {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+@media (min-width: 1400px) {
+  .promo__title--about {
+    padding-right: 10px;
+    margin-top: 28px;
+  }
 }
 .promo__description--about {
   padding-right: 0;
   font-weight: 600;
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 25px;
+  line-height: 35px;
+}
+@media (min-width: 768px) {
+  .promo__description--about {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+@media (min-width: 1400px) {
+  .promo__description--about {
+    padding-right: 70px;
+  }
+}
+.promo__about-img-wrapper {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+@media (min-width: 768px) {
+  .promo__about-img-wrapper {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .promo__about-img-wrapper {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .promo__img-about {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 490px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1400px) {
+  .promo__list--about {
+    margin-top: 5px;
+    margin-right: 60px;
+  }
+}
+.promo__item--about {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (min-width: 1400px) {
+  .reviews_about {
+    padding-bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

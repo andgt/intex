@@ -1,6 +1,14 @@
 .description-about {
-  padding-bottom: 158px;
+  padding-bottom: 60px;
   background-image: url("../img/about/description-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 138px;
+  }
+}
+
+.description__item-text--about {
+  .typography(16px; 24px);
 }
