@@ -382,6 +382,9 @@ a {
     height: 55px;
   }
 }
+.header__logo-link {
+  display: inline-block;
+}
 @media (max-width: 767px) {
   .header__logo-sticky {
     position: fixed;
@@ -3116,15 +3119,6 @@ a {
     background-image: url("../img/about/promo-background.png");
     background-size: cover;
     background-repeat: no-repeat;
-  }
-}
-.header__logo-link {
-  width: 130px;
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  .header__logo-link {
-    width: 350px;
   }
 }
 .description-about {
