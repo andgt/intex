@@ -461,6 +461,7 @@ a {
 .contacts__messenger-link--viber-footer {
   width: 25px;
   height: 28px;
+  margin-top: 4px;
 }
 .contacts__icon {
   display: inline-block;
@@ -593,6 +594,7 @@ a {
 @media (min-width: 1400px) {
   .contacts--footer {
     align-items: flex-start;
+    max-width: 250px;
     margin: 0;
   }
 }
@@ -615,6 +617,16 @@ a {
 }
 .contacts__phone--footer {
   margin: 0;
+}
+@media (max-width: 767px) {
+  .contacts__phone--footer {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .contacts__phone--footer {
+    margin-bottom: 13px;
+  }
 }
 .contacts__phone-link--footer {
   color: #ffffff;

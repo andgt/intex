@@ -70,6 +70,7 @@
 .contacts__messenger-link--viber-footer {
   width: 25px;
   height: 28px;
+  margin-top: 4px;
 }
 
 .contacts__icon {
@@ -195,6 +196,7 @@
 
   @media (min-width: @desktop-width) {
     align-items: flex-start;
+    max-width: 250px;
     margin: 0;
   }
 }
@@ -217,6 +219,14 @@
 
 .contacts__phone--footer {
   margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 13px;
+  }
 }
 
 .contacts__phone-link--footer {
