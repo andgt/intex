@@ -151,6 +151,7 @@ window.addEventListener("resize", function() {
 
 let menuFixed = function() {
   let logo = document.querySelector(".header__logo");
+  let promo = document.querySelector(".header");
 
   if (window.pageYOffset > 10) {
     mainNav.classList.add("main-nav__sticky");
