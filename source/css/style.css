@@ -250,7 +250,12 @@ a {
   margin: 0;
 }
 .main--catalog {
-  background-color: #f2faff;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .main--catalog {
+    padding-bottom: 150px;
+  }
 }
 .main__subtitle {
   padding: 0;
@@ -347,6 +352,14 @@ a {
   background-color: #ffffff;
   color: #37474f;
   overflow-x: hidden;
+}
+.page__body--catalog {
+  position: relative;
+  background: url("../img/catalog/catalog_background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: -759px -532px;*/
+  background-color: #f2faff;
 }
 .header {
   position: relative;
@@ -1184,17 +1197,30 @@ a {
 .product__title-link:active {
   opacity: 0.7;
 }
+.product__feature-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 .product__title-link--accesories {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
 }
-.product__size {
+.product__feature {
   padding: 0;
   margin: 0 0 19px 0;
   font-size: 14px;
   line-height: 17px;
   color: #37474f;
+}
+.product__feature--size {
+  margin-right: 13px;
+}
+.product__feature--wrap {
+  margin-bottom: 2px;
+}
+.product__feature--wrap-color {
+  margin-bottom: 0;
 }
 .product__price {
   position: relative;
@@ -3233,15 +3259,48 @@ a {
   }
 }
 .header__catalog {
+  position: relative;
   padding-bottom: 0;
   margin-bottom: 0;
+  background: transparent;
 }
 .header__catalog-wrapper {
   padding-bottom: 20px;
+  margin-bottom: 35px;
 }
-.description {
+@media (min-width: 1400px) {
+  .description__product {
+    padding-left: 347px;
+  }
+}
+.description__product-title {
   padding: 0;
-  margin: 0;
+  margin: 0 0 30px 0;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 33px;
+  color: #476273;
+}
+@media (min-width: 768px) {
+  .description__product-title {
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+.description__product-text {
+  padding: 0;
+  margin: 0 0 32px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.description__product-text:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .description__product-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .filter {
   padding: 0;
@@ -3303,15 +3362,38 @@ a {
   background-color: #265c7e;
   transition: 0.3s ease;
 }
+.catalog--card {
+  padding-top: 7px;
+  background-color: transparent;
+}
+@media (min-width: 1400px) {
+  .catalog--card {
+    padding-bottom: 78px;
+  }
+}
 .catalog__wrapper {
   display: grid;
-  grid-template-columns: 318px, 1fr;
+  grid-template-columns: minmax(300px, 1fr);
+  justify-content: center;
   -moz-column-gap: 29px;
        column-gap: 29px;
 }
+@media (min-width: 768px) {
+  .catalog__wrapper {
+    grid-template-columns: 318px 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .catalog__header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
 .catalog__title {
+  max-width: 370px;
   padding: 0;
-  margin: 0 0 13px 0;
+  margin: 0 auto 13px auto;
   font-weight: 600;
   font-size: 35px;
   line-height: 45px;
@@ -3319,15 +3401,46 @@ a {
 }
 @media (min-width: 768px) {
   .catalog__title {
+    max-width: 450px;
+    margin: 0 30px 13px 0;
     font-size: 45px;
     line-height: 55px;
   }
 }
+@media (min-width: 1400px) {
+  .catalog__title {
+    margin-right: 111px;
+  }
+}
+.catalog__list--inner {
+  margin-bottom: 55px;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+  row-gap: 33px;
+}
+.catalog__toggle {
+  top: -43px;
+}
+.catalog__toggle--left {
+  left: 1px;
+}
+.catalog__toggle--right {
+  right: 1px;
+}
 .sorting {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 400px;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px auto;
+}
+@media (min-width: 768px) {
+  .sorting {
+    justify-content: normal;
+    max-width: 418px;
+    margin: 7px 0 20px 0;
+  }
 }
 .sorting__title {
   padding: 0;
@@ -3395,6 +3508,60 @@ a {
   height: 1px;
   background-color: #265c7e;
   transition: 0.3s ease;
+}
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.pagination__item {
+  margin-right: 20px;
+}
+.pagination__item:last-child {
+  margin-right: 0;
+}
+.pagination__link {
+  position: relative;
+  display: block;
+  padding: 10px 14px 11px 16px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  color: #4dc5d4;
+  text-align: center;
+  z-index: 1;
+  transition: 0.3s ease;
+}
+.pagination__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='21' cy='21' r='20' stroke='url(%23paint0_linear)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1.36904e-07' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: 0.3s ease;
+}
+.pagination__link:hover,
+.pagination__link:focus,
+.pagination__link:active {
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.pagination__link:hover::before,
+.pagination__link:focus::before,
+.pagination__link:active::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='21' cy='21' r='20' fill='url(%23paint0_linear)' stroke='url(%23paint1_linear)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='0' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='1.36904e-07' y1='21' x2='42' y2='21' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23479DD4'/%3E%3Cstop offset='1' stop-color='%2343C3D1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.pagination__item:first-child .pagination__link {
+  padding: 10px 16px 11px 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
