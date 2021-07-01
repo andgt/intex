@@ -245,6 +245,28 @@ a {
     opacity: 1;
   }
 }
+.list-pages {
+  padding: 0;
+  margin-bottom: 80px;
+  list-style: none;
+}
+.list-pages__item {
+  margin-bottom: 20px;
+}
+.list-pages__item:last-child {
+  margin-bottom: 0;
+}
+.list-pages__link {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #37474f;
+}
+.list-pages__link:hover,
+.list-pages__link:focus {
+  color: #47a0d4;
+}
 .main {
   padding: 0;
   margin: 0;
@@ -372,6 +394,10 @@ a {
   .header {
     padding: 29px 0 181px 0;
   }
+}
+.header--list-pages {
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
 .header__wrapper {
   display: flex;
@@ -3307,6 +3333,11 @@ a {
   margin: 0;
 }
 .filter__title {
+  padding: 0;
+  margin: 0;
+}
+.filter__title-link {
+  display: block;
   padding: 16px 15px 17px 30px;
   margin: 0;
   color: #ffffff;
