@@ -33,8 +33,21 @@
   order: 1;
 
   @media (min-width: @desktop-width) {
-    width: 351px;
+    width: 195px;
     height: 55px;
+    margin-right: 14px;
+  }
+}
+
+.header__logo-description {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    max-width: 142px;
+    .offset(0; 0);
+    .typography(14px; 19px);
+    color: @turquoise1;
   }
 }
 

@@ -69,3 +69,19 @@ window.onscroll = function() {
   menuFixed();
   scrollUpButton();
 };
+
+// Сортировка
+
+let btnSorting = document.querySelector(".button__sorting");
+let sortingList = document.querySelector(".sorting__list");
+let htmlPage = document.querySelector(".page");
+
+btnSorting.onclick = function() {
+  sortingList.classList.toggle("sorting__list--active");
+};
+
+htmlPage.addEventListener("click", function (evt) {
+  if (!evt.target.classList.contains("sorting__list--active") && (!evt.target.classList.contains("button__sorting"))) {
+    sortingList.classList.remove("sorting__list--active");
+  }
+});
