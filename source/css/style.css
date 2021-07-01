@@ -1885,6 +1885,7 @@ a {
 @media (min-width: 1400px) {
   .promo {
     padding-bottom: 85px;
+    background: linear-gradient(180deg, #f1faff 90.68%, rgba(247, 248, 249, 0) 100%);
   }
 }
 .promo__sticky {
