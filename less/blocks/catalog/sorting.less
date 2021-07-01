@@ -1,9 +1,11 @@
 .sorting {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 400px;
   .offset(0; 0 auto 20px auto);
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
     justify-content: normal;
@@ -24,22 +26,25 @@
 }
 
 .sorting__list {
-  display: flex;
-  flex-wrap: wrap;
-  .offset(0; 0);
+  display: none;
   list-style: none;
 }
 
+.sorting__list--active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  min-width: 210px;
+  .offset(20px; 0);
+  background-color: @white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px @blue4;
+}
+
 .sorting__item {
-  .offset(0; 0 9px 0 0);
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-right: 29px;
-  }
+  .offset(0; 0);
 }
 
 .sorting__link {

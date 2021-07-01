@@ -229,6 +229,39 @@ a {
   -webkit-animation: 0.3s linear btn-showing;
           animation: 0.3s linear btn-showing;
 }
+.button__sorting {
+  position: relative;
+  padding: 0 30px 0 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #37474f;
+  transition: 0.3s ease;
+}
+.button__sorting::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 12px;
+  height: 7px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='28px' height='15px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 1.06 0.57' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:black;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Camada_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg id='iconfinder_multimedia-03_2849833.svg'%3E%3Cg id='_1' data-name='1'%3E%3Cpath class='fil0' d='M1.06 0.04c0,-0.02 -0.01,-0.04 -0.04,-0.04 -0.01,0 -0.02,0 -0.03,0.01l-0.46 0.47 -0.46 -0.47c-0.01,-0.01 -0.02,-0.01 -0.03,-0.01 -0.02,0 -0.04,0.02 -0.04,0.04 0,0.01 0,0.02 0.01,0.03l0.49 0.49c0.01,0.01 0.02,0.01 0.03,0.01 0.01,0 0.02,0 0.03,-0.01l0.49 -0.49c0.01,-0.01 0.01,-0.02 0.01,-0.03 0,0 0,0 0,0l0 0z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  transition: 0.3s ease;
+}
+.button__sorting:hover,
+.button__sorting:focus {
+  color: #265c7e;
+  transform: none;
+}
+.button__sorting:hover::before,
+.button__sorting:focus::before {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='12px' height='6px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.21 0.12' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%23265C7E;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Camada_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg id='iconfinder_multimedia-03_2849833.svg'%3E%3Cg id='_1' data-name='1'%3E%3Cpath class='fil0' d='M0.21 0.01c0,-0.01 0,-0.01 0,-0.01 -0.01,0 -0.01,0 -0.01,0l-0.09 0.1 -0.1 -0.1c0,0 0,0 0,0 -0.01,0 -0.01,0 -0.01,0.01 0,0 0,0 0,0l0.1 0.1c0,0 0.01,0.01 0.01,0.01 0,0 0,-0.01 0,-0.01l0.1 -0.1c0,0 0,0 0,0 0,0 0,0 0,0l0 0z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.button__sorting:active {
+  opacity: 0.7;
+}
 @-webkit-keyframes btn-showing {
   0% {
     opacity: 0;
@@ -420,8 +453,23 @@ a {
 }
 @media (min-width: 1400px) {
   .header__logo {
-    width: 351px;
+    width: 195px;
     height: 55px;
+    margin-right: 14px;
+  }
+}
+.header__logo-description {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .header__logo-description {
+    display: block;
+    max-width: 142px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #476273;
   }
 }
 .header__logo-link {
@@ -3466,6 +3514,7 @@ a {
   -moz-column-gap: 29px;
        column-gap: 29px;
   row-gap: 33px;
+  z-index: 0;
 }
 .catalog__toggle {
   top: -43px;
@@ -3477,12 +3526,14 @@ a {
   right: 1px;
 }
 .sorting {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 400px;
   padding: 0;
   margin: 0 auto 20px auto;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .sorting {
@@ -3506,23 +3557,25 @@ a {
   }
 }
 .sorting__list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  display: none;
   list-style: none;
+}
+.sorting__list--active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  min-width: 210px;
+  padding: 20px;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px rgba(71, 159, 212, 0.3);
 }
 .sorting__item {
   padding: 0;
-  margin: 0 9px 0 0;
-}
-.sorting__item:last-child {
-  margin-right: 0;
-}
-@media (min-width: 768px) {
-  .sorting__item {
-    margin-right: 29px;
-  }
+  margin: 0;
 }
 .sorting__link {
   position: relative;
