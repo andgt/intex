@@ -3531,9 +3531,9 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  text-align: center;
   background-color: transparent;
   color: #4dc5d4;
-  text-align: center;
   z-index: 1;
   transition: 0.3s ease;
 }
