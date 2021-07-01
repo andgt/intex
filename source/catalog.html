@@ -88,13 +88,33 @@
       </div>
     </header>
     <main class="main main--catalog">
-      <div class="container breadcrumbs__wrapper">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html" tabindex="0">Главная</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Бассейны Intex</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active" href="#">Каркасные бассейны</a></li>
-        </ul>
+      <div class="container breadcrumbs" id="breadcrumbs">
+        <ol class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+            <a itemprop="item" href="main.html">
+              <span itemprop="name" class="breadcrumbs__link">Главная</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="catalog.html">
+              <span itemprop="name" class="breadcrumbs__link">Каталог</span>
+            </a>
+            <meta itemprop="position" content="2">
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">
+              <span itemprop="name" class="breadcrumbs__link">Бассейны Intex</span>
+            </a>
+            <meta itemprop="position" content="3">
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">
+              <span itemprop="name" class="breadcrumbs__link breadcrumbs__link--active">Каркасные бассейны</span>
+            </a>
+            <meta itemprop="position" content="4">
+          </li>
+        </ol>
       </div>
       <div class="container catalog__wrapper">
         <div class="filter">

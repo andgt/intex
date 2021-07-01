@@ -1,11 +1,14 @@
 .header {
   position: relative;
-  .offset(20px 0 40px 0; 0 0 40px);
-  background: linear-gradient(180deg, @lightblue 90.68%, @white6 100%);
-  z-index: 2;
+  .offset(20px 0 0 0; 0);
+  background-color: @white8;
+  z-index: 5;
 
   @media (min-width: @desktop-width) {
-    padding: 29px 0 181px 0;
+    min-height: 250px;
+    padding: 29px 0 0 0;
+    margin-bottom: 0;
+    background: none;
   }
 }
 
@@ -17,7 +20,6 @@
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
