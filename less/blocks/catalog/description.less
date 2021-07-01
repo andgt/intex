@@ -1,3 +1,29 @@
-.description {
-  .offset(0; 0);
+.description__product {
+  @media (min-width: @desktop-width) {
+    padding-left: 347px;
+  }
+}
+
+.description__product-title {
+  .offset(0; 0 0 30px 0);
+  font-weight: 600;
+  .typography(25px; 33px);
+  color: @turquoise1;
+
+  @media (min-width: @tablet-width) {
+    .typography(35px; 43px);
+  }
+}
+
+.description__product-text {
+  .offset(0; 0 0 32px 0);
+  .typography(14px; 22px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    .typography(16px; 24px);
+  }
 }
