@@ -121,8 +121,9 @@
 }
 
 .catalog__list--accessories {
-  column-gap: 35px;
-  row-gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 28px;
+  row-gap: 24px;
   margin-bottom: 0;
 }
 
@@ -132,6 +133,15 @@
   .offset(0; 0 auto);
   background-color: @white2;
   border-radius: 10px;
+}
+
+.catalog__item--accessories {
+  background: linear-gradient(90.71deg, @blue6 0.7%, @blue9 100%);
+  box-shadow: 0 24px 30px -17px @blue7;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog__button-wrapper {
