@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html class="page">
+<head class="">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Статья</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg">
+</head>
+<body class="page__body page__body--blog">
+  <header class="header header--blog">
+    <div class="container header__wrapper">
+      <a class="header__logo-link" href="main.html" target="_blank" rel="nofollow">
+        <picture>
+          <source media="(min-width: 1400px)" srcset="img/desktop-img/logo.svg">
+          <img class="header__logo" src="img/mobile-img/logo.svg" width="98" height="26.6" alt="Логотип Intex">
+        </picture>
+      </a>
+      <p class="header__logo-description">Продажа, доставка, установка каркасных бассейнов INTEX</p>
+      <div class="contacts">
+        <div class="contacts__messenger">
+          <a class="contacts__messenger-link contacts__messenger-link--whatsapp" href="https://api.whatsapp.com/send?phone=79192160574" target="_blank" rel="nofollow">
+            <img class="contacts__icon" src="img/icon-whatsapp.svg" width="32" height="37" alt="Логотип Whatsapp">
+          </a>
+          <a class="contacts__messenger-link" href="viber://chat?number=79192160574" target="_blank" rel="nofollow">
+            <img class="contacts__icon" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
+          </a>
+        </div>
+        <div class="contacts__phone">
+          <a class="contacts__phone-link" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
+          <p class="contacts__schedule">пн-вс 09:00-22:00</p>
+        </div>
+        <a class="contacts__btn-back-call contacts__btn-back-call--tablet" href="#">Заказать звонок</a>
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="button main-nav__button-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="about.html" target="_blank" rel="nofollow">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html" target="_blank" rel="nofollow">Бассейны</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--accessories" href="#">Аксессуары</a>
+              <div class="main-nav__submenu">
+                <ul class="main-nav__submenu-list">
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Подстилки</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Тент-накидки</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Фильтр-насосы</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Лестницы</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Скиммеры</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__link main-nav__submenu-link" href="#">Химия для бассейнов</a></li>
+                </ul>
+              </div>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="services.html" target="_blank" rel="nofollow">Услуги</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="delivery.html" target="_blank" rel="nofollow">Доставка и оплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blog.html" target="_blank" rel="nofollow">Блог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="contacts.html" target="_blank" rel="nofollow">Контакты</a>
+          </li>
+        </ul>
+        <div class="contacts contacts--main-nav">
+          <div class="contacts__messenger contacts__messenger--main-nav">
+            <a class="contacts__messenger-link contacts__messenger-link--whatsapp" href="https://api.whatsapp.com/send?phone=79192160574" target="_blank" rel="nofollow">
+              <img class="contacts__icon contacts__icon--main-nav" src="img/icon-whatsapp.svg" width="32" height="37" alt="Логотип Whatsapp">
+            </a>
+            <a class="contacts__messenger-link" href="viber://chat?number=79192160574" target="_blank" rel="nofollow">
+              <img class="contacts__icon contacts__icon--main-nav" src="img/icon-viber.svg" width="32" height="37" alt="Логотип Viber">
+            </a>
+          </div>
+          <div class="contacts__phone">
+            <a class="contacts__phone-link contacts__phone-link--main-nav" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
+            <p class="contacts__schedule contacts__schedule--main-nav">пн-вс 09:00-22:00</p>
+          </div>
+          <a class="contacts__btn-back-call contacts__btn-back-call--tablet" href="#">Заказать звонок</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main main--catalog">
+    <div class="container breadcrumbs breadcrumbs--blog" id="breadcrumbs">
+      <ol class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+          <a itemprop="item" href="main.html">
+            <span itemprop="name" class="breadcrumbs__link">Главная</span>
+          </a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="blog.html">
+            <span itemprop="name" class="breadcrumbs__link">Блог</span>
+          </a>
+          <meta itemprop="position" content="2">
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#">
+            <span itemprop="name" class="breadcrumbs__link breadcrumbs__link--active">Хит продаж – максимальная комплектация и простота эксплуатации</span>
+          </a>
+          <meta itemprop="position" content="2">
+        </li>
+      </ol>
+    </div>
+    <div class="blog container">
+      <article class="article">
+        <h1 class="main__subtitle main__subtitle--blog">Хит продаж – максимальная комплектация и простота эксплуатации</h1>
+        <picture>
+          <img src="">
+        </picture>
+        <p class="article__text">Большой семейный бассейн EASY SET POOL 56912 уже ни один сезон является лидером продаж на украинском рынке. Чаша объемом 14245 литров и высотой 122 см. подойдет для большой семьи или веселой компании, а полная комплектация позволит больше не думать о выборе дополнительных аксессуаров. Сегодня мы проводим уникальную акцию - включаем в цену бассейна все необходимое для его обслуживания.Количество бассейнов ограничено с полной комплектацией по акционной цене до 25.06.2019 либо до полной распродажи. Подробнее... Сегодня мы проводим уникальную акцию - включаем в цену бассейна все необходимое для его обслуживания. В комплект входит мощный фильтр-насос, картридж, тент, подстилка под бассейн, двухсторонняя лестница, катридж, шланги, гофры, заглушки, переходник под слив воды. Количество бассейнов ограничено с полной комплектацией по акционной цене до 30.05.2019 либо до полной распродажи.</p>
+        <h2 class="article__subtitle">Семейный надувной бассейн с полной комплектацией</h2>
+        <p class="article__text">Если вам кажется, что без этих аксессуаров можно обойтись, вы ошибаетесь:</p>
+        <ul class="article__list">
+          <li class="article__link">
+            <p class="article__text"><a class="article__link" href="">Фильтр-насос</a> очищает воду и обеспечивает ее беспрерывную циркуляцию</p>
+          </li>
+          <li class="article__link">
+            <p class="article__text"><a class="article__link" href="">Тент</a> защищает воду от пыли, а также от попадания мусора и листьев в ветреную погоду.</p>
+          </li>
+          <li class="article__link">
+            <p class="article__text"><a class="article__link" href="">Подстилка под бассейн</a> предохраняет дно от нарушения целостности и придает конструкции ухоженный вид. На подстилку приятно становиться ногами после выхода из воды.</p>
+          </li>
+          <li class="article__link">
+            <p class="article__text"><a class="article__link" href="">Подстилка под бассейн</a> предохраняет дно от нарушения целостности и придает конструкции ухоженный вид. На подстилку приятно становиться ногами после выхода из воды.</p>
+          </li>
+          <li class="article__link">
+            <p class="article__text">Борта чаши высокие, поэтому вы не сможете обойтись без <a class="article__link" href="">двухсторонней лестницы</a>, которая позволяет удобно входить и выходить из бассейна.</p>
+          </li>
+          <li class="article__link">
+            <p class="article__text"><a class="article__link" href="">Ручной насос</a> предназначен для накачки верхнего надувного круга.</p>
+          </li>
+          <li class="article__link">
+            <p class="article__text"><a class="article__link" href="">Картридж</a> к <a class="article__link" href="#">фильтру-насосу</a>.</p>
+          </li>
+          <li class="article__link">
+            <p class="article__text">Дополнительный <a class="article__link" href="">подарочный катридж</a> к <a class="article__link" href="">фильтру-насосу</a></p>
+          </li>
+        </ul>
+        <h2 class="article__subtitle">Прост в установке и эксплуатации</h2>
+        <p class="article__text">Несмотря на большой размер, установка бассейна не требует сил и времени. Достаточно подготовить ровную площадку, очистить ее от веток и мусора, который может проткнуть дно резервуара, и расстелить подстилку под бассейн. На подстилку аккуратно разложите бассейн, накачайте верхний круг, установите насос-фильтр и заливайте воду. При этом стенки бассейна сами примут нужную форму.</p>
+        <p class="article__text">Бассейн изготавливается по новейшей технологии SUPER-TOUGH из трехслойного плотного ПВХ. Он абсолютно безопасен, отличается длительным сроком эксплуатации и относительно небольшими размерами в сложенном виде. Акционная цена и привлекательная комплектация делают модель EASY SET POOL 56912 одной из самых популярных, поэтому рекомендуем не затягивать с решением и не откладывать покупку на лето. Сейчас самое время начать подготовку к купальному сезону. Процесс сборки чаши займет всего полчаса, при этом для установки вам не понадобятся специальные навыки и умения. Легкий, компактный и простой каркасный бассейн Metal Frame Pool Intex доставит море удовольствия вашим близким и друзьям. Он сделает жаркий день приятным и комфортным, позволит провести отпуск весело, укрепить здоровье и приятно отдохнуть.</p>
+      </article>
+      <ul class="blog__list">
+        <li class="blog__item">
+          <a class="blog__img-link" href="#" target="_blank" rel="nofollow">
+            <picture>
+              <img class="blog__img" src="img/blog/blog-img-3.jpg" srcset="img/blog/blog-img-3@2x.jpg 2x" width="434" height="237" alt="Иллюстрация статьи">
+            </picture>
+          </a>
+          <div class="blog__text-wrapper">
+            <time class="blog__date" datetime="2021-04-08">2021-04-08</time>
+            <h2 class="blog__title">Большой прямоугольный каркасный бассейн INTEX 549 см х 274 см х 132 см – лучший выбор для веселой компании</h2>
+            <div class="blog__link-wrapper">
+              <a class="blog__link" href="#">Читать далее</a>
+            </div>
+          </div>
+        </li>
+        <li class="blog__item">
+          <a class="blog__img-link" href="#" target="_blank" rel="nofollow">
+            <picture>
+              <img class="blog__img" src="img/blog/blog-img-2.jpg" srcset="img/blog/blog-img-2@2x.jpg 2x" width="434" height="237" alt="Иллюстрация статьи">
+            </picture>
+          </a>
+          <div class="blog__text-wrapper">
+            <time class="blog__date" datetime="2021-04-08">2021-04-08</time>
+            <h2 class="blog__title">Новинка! Надувной бассейн Intex 57190 – море удовольствия для всей семьи</h2>
+            <div class="blog__link-wrapper">
+              <a class="blog__link" href="#">Читать далее</a>
+            </div>
+          </div>
+        </li>
+        <li class="blog__item">
+          <a class="blog__img-link" href="#" target="_blank" rel="nofollow">
+            <picture>
+              <img class="blog__img" src="img/blog/blog-img-7.jpg" srcset="img/blog/blog-img-7@2x.jpg 2x" width="434" height="237" alt="Иллюстрация статьи">
+            </picture>
+          </a>
+          <div class="blog__text-wrapper">
+            <time class="blog__date" datetime="2021-04-08">2021-04-08</time>
+            <h2 class="blog__title">Новинка! Пластиковые мячи для игровых центров и бассейнов – играем и развиваемся</h2>
+            <div class="blog__link-wrapper">
+              <a class="blog__link" href="#">Читать далее</a>
+            </div>
+          </div>
+        </li>
+        <li class="blog__item">
+          <a class="blog__img-link" href="#" target="_blank" rel="nofollow">
+            <picture>
+              <img class="blog__img" src="img/blog/blog-img-8.jpg" srcset="img/blog/blog-img-8@2x.jpg 2x" width="434" height="237" alt="Иллюстрация статьи">
+            </picture>
+          </a>
+          <div class="blog__text-wrapper">
+            <time class="blog__date" datetime="2021-04-08">2021-04-08</time>
+            <h2 class="blog__title">Ремонтный набор Intex – выручит в сложной ситуации</h2>
+            <div class="blog__link-wrapper">
+              <a class="blog__link" href="#">Читать далее</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner-menu">
+      <div class="container footer__container">
+        <img class="footer__logo" src="img/footer-logo.svg" width="211" height="130" alt="Логотип Intex">
+        <div class="footer__nav-block">
+          <div class="footer__wrapper">
+            <div class="footer__menu-inner">
+              <h3 class="footer__menu-title">О нас</h3>
+              <ul class="footer__menu footer__menu--about">
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="delivery.html">Доставка и оплата</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="blog.html">Блог</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-inner footer__menu-inner--services">
+              <h3 class="footer__menu-title">Услуги</h3>
+              <ul class="footer__menu footer__menu--services">
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="delivery.html">Доставка</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="install.html">Установка</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__menu-link" href="services.html">Обслуживание</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__wrapper">
+            <h3 class="footer__menu-title">Каталог</h3>
+            <ul class="footer__menu footer__menu--catalog">
+              <li class="footer__item">
+                <a class="footer__menu-link" href="catalog.html">Каркасные бассейны INTEX</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__menu-link" href="litter.html">Подстилки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__menu-link" href="awning-capes.html">Тент-накидки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__menu-link" href="filter-pumps.html">Фильтр-насосы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__menu-link" href="stairs.html">Лестницы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__menu-link" href="skimmers.html">Скиммеры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__menu-link" href="chemicals.html">Химия для бассейнов</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__wrapper-footer">
+          <div class="contacts contacts--footer">
+            <h3 class="contacts__title contacts__title--footer footer__menu-title">Контакты</h3>
+            <div class="contacts__messenger contacts__messenger--footer">
+              <a class="contacts__phone-link contacts__phone-link--footer" href="tel:+79192160574" rel="nofollow">+7 (919) 216-05-74</a>
+              <a class="contacts__messenger-link contacts__messenger-link--whatsapp-footer" href="#" target="_blank" rel="nofollow">
+                <img class="contacts__icon contacts__icon--footer-whatsapp" src="img/icon-footer-whatsapp.svg" width="25" height="25" alt="Логотип Whatsapp">
+              </a>
+              <a class="contacts__messenger-link contacts__messenger-link--viber-footer" href="#" target="_blank" rel="nofollow">
+                <img class="contacts__icon contacts__icon--footer-viber" src="img/icon-footer-viber.svg" width="25" height="28" alt="Логотип Viber">
+              </a>
+            </div>
+            <div class="contacts__phone contacts__phone--footer">
+              <div class="contacts__wrapper-schedule">
+                <h3 class="contacts__title-schedule">Режим работы:</h3>
+                <p class="contacts__schedule contacts__schedule--footer">пн-вс 09:00-22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <h3 class="social__title">Мы в соцсетях:</h3>
+            <div class="social__icon-wrapper">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Ссылка на Инстаграм</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__inner-info">
+      <div class="container">
+        <div class="footer__info-block">
+          <a class="footer__info-text footer__policy" href="#" target="_blank" rel="nofollow">Политика конфиденциальности</a>
+          <p class="footer__info-text footer__copyright">Simferopol © Copyright 2021</p>
+          <div class="footer__dev">
+            <p class="footer__info-text footer__dev-text">Сделано в</p>
+            <a class="footer__dev-logo" href="#">
+              <img src="img/logo-sheer.svg" width="50" height="18" alt="Логотип веб-студии Sheer">
+              <span class="visually-hidden">Логотип веб-студии Sheer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button__scroll-up" type="button">
+      <span class="visually-hidden">Перейти в начало страницы</span>
+    </button>
+  </footer>
+  <script src="js/script-accessories.js"></script>
+</body>
+</html>
