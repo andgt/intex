@@ -419,8 +419,11 @@ a {
   background: url("../img/catalog/catalog_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-position: -759px -532px;*/
   background-color: #f2faff;
+}
+.page__body--accessories {
+  background-size: 3160px 2810px;
+  background-position: -500px -252px;
 }
 .header {
   position: relative;
@@ -3378,6 +3381,9 @@ a {
   margin-bottom: 0;
   background: transparent;
 }
+.header__catalog--accessories {
+  background-color: transparent;
+}
 .header__catalog-wrapper {
   margin-bottom: 0;
 }
@@ -3498,6 +3504,7 @@ a {
 .catalog--accessories {
   padding-top: 0;
   padding-bottom: 0;
+  background-color: transparent;
 }
 .catalog__wrapper {
   display: grid;

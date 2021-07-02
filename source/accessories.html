@@ -7,16 +7,16 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/favicon.svg">
 </head>
-<body class="page__body page__body--catalog">
-  <header class="header header__catalog">
+<body class="page__body page__body--catalog page__body--accessories">
+  <header class="header header__catalog header__catalog--accessories">
     <div class="container header__wrapper header__catalog-wrapper">
       <a class="header__logo-link" href="main.html" target="_blank" rel="nofollow">
         <picture>
           <source media="(min-width: 1400px)" srcset="img/desktop-img/logo.svg">
           <img class="header__logo" src="img/mobile-img/logo.svg" width="98" height="26.6" alt="Логотип Intex">
         </picture>
-        <p class="header__logo-description">Продажа, доставка, установка каркасных бассейнов INTEX</p>
       </a>
+      <p class="header__logo-description">Продажа, доставка, установка каркасных бассейнов INTEX</p>
       <div class="contacts">
         <div class="contacts__messenger">
           <a class="contacts__messenger-link contacts__messenger-link--whatsapp" href="https://api.whatsapp.com/send?phone=79192160574" target="_blank" rel="nofollow">
@@ -89,12 +89,28 @@
   </header>
   <main class="main main--catalog">
     <div class="container breadcrumbs__wrapper">
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html" tabindex="0">Главная</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Бассейны Intex</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active" href="#">Каркасные бассейны</a></li>
-      </ul>
+      <div class="container breadcrumbs" id="breadcrumbs">
+        <ol class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+            <a itemprop="item" href="main.html">
+              <span itemprop="name" class="breadcrumbs__link">Главная</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="catalog.html">
+              <span itemprop="name" class="breadcrumbs__link">Каталог</span>
+            </a>
+            <meta itemprop="position" content="2">
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">
+              <span itemprop="name" class="breadcrumbs__link">Аксессуары для бассейнов</span>
+            </a>
+            <meta itemprop="position" content="3">
+          </li>
+        </ol>
+      </div>
     </div>
     <div class="container catalog__wrapper">
       <div class="filter">
@@ -326,6 +342,6 @@
       <span class="visually-hidden">Перейти в начало страницы</span>
     </button>
   </footer>
-  <!--<script src="js/script-catalog.js"></script>-->
+  <script src="js/script-accessories.js"></script>
 </body>
 </html>
