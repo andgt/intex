@@ -115,3 +115,87 @@
     background-repeat: no-repeat;
   }
 }
+
+.product__price--distance {
+  padding-top: 5px;
+  .typography(16px; 18px);
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    .typography(20px; 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    margin-top: -3px;
+    .typography(25px; 47px);
+  }
+}
+
+.product__price--text {
+  padding: 10px 0 13px 0;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-weight: 600;
+  .typography(20px; 24px);
+  color: @grey4;
+
+  &::before {
+    display: none;
+  }
+}
+
+.product__price--services {
+  padding: 5px 0 0 0;
+  .typography(16px; 18px);
+  margin-left: 7px;
+
+  &::before {
+    top: 7px;
+    left: 28px;
+    width: 8px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 16 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.81419 21.7062H2.2019V0H9.58918C11.6285 0 13.2015 0.650861 14.3079 1.95258C15.4361 3.23261 16.0002 4.82722 16.0002 6.73642C16.0002 8.6673 15.4361 10.2836 14.3079 11.5853C13.2015 12.8654 11.6285 13.5054 9.58918 13.5054H5.81419V21.7062ZM9.16612 10.3162C10.1207 10.3162 10.8801 9.99072 11.4441 9.33986C12.0299 8.689 12.3228 7.82118 12.3228 6.73642C12.3228 5.65165 12.0299 4.78383 11.4441 4.13297C10.8801 3.48211 10.1207 3.15668 9.16612 3.15668H5.81419V10.3162H9.16612Z' fill='%2347a0d4'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.7155 17.8011L-2.276e-07 17.8011L0 15.1976L11.7155 15.1976L11.7155 17.8011Z' fill='%2347a0d4'/%3E%3C/svg%3E%0A");
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 0 13px 0;
+    .typography(20px; 24px);
+    margin-left: 7px;
+
+    &::before {
+      top: 14px;
+      left: 35px;
+      width: 11px;
+      height: 15px;
+      background-image: url("data:image/svg+xml,%3Csvg width='11' height='15' viewBox='0 0 16 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.81419 21.7062H2.2019V0H9.58918C11.6285 0 13.2015 0.650861 14.3079 1.95258C15.4361 3.23261 16.0002 4.82722 16.0002 6.73642C16.0002 8.6673 15.4361 10.2836 14.3079 11.5853C13.2015 12.8654 11.6285 13.5054 9.58918 13.5054H5.81419V21.7062ZM9.16612 10.3162C10.1207 10.3162 10.8801 9.99072 11.4441 9.33986C12.0299 8.689 12.3228 7.82118 12.3228 6.73642C12.3228 5.65165 12.0299 4.78383 11.4441 4.13297C10.8801 3.48211 10.1207 3.15668 9.16612 3.15668H5.81419V10.3162H9.16612Z' fill='%2347a0d4'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.7155 17.8011L-2.276e-07 17.8011L0 15.1976L11.7155 15.1976L11.7155 17.8011Z' fill='%2347a0d4'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.product__price--region {
+  margin-right: 10px;
+
+  &::before {
+    left: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 16px;
+
+    &::before {
+      left: 23px;
+    }
+  }
+}
+
+.product__price--install {
+  margin-left: 0;
+
+  &::before {
+    left: 60px;
+  }
+}
