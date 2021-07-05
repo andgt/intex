@@ -2251,6 +2251,9 @@ a {
 .catalog__tab-button--right {
   border-radius: 0 33px 33px 0;
 }
+.catalog__tab-button--delivery {
+  min-width: 170px;
+}
 .catalog__cards {
   display: none;
   padding: 0;
@@ -4123,6 +4126,10 @@ h2 + img {
   display: block;
   float: right;
   margin-left: 50px;
+}
+.services {
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
