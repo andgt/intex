@@ -31,7 +31,7 @@ menuItemsAccesories.onclick = function(evt) {
 
 let tab = function() {
   let tabBtn = document.querySelectorAll(".catalog__tab-button");
-  let cardsBlock = document.querySelectorAll(".catalog__cards");
+  let tabBlocks = document.querySelectorAll(".services__wrapper");
   let tabName;
 
   tabBtn.forEach(element => {
@@ -49,11 +49,11 @@ let tab = function() {
   }
 
   function selectTabContent(tabName) {
-    cardsBlock.forEach(element => {
+    tabBlocks.forEach(element => {
       if (element.classList.contains(tabName)) {
-        element.classList.add("catalog__cards--active");
+        element.classList.add("services__wrapper--active");
       } else {
-        element.classList.remove("catalog__cards--active");
+        element.classList.remove("services__wrapper--active");
       }
     });
   };
