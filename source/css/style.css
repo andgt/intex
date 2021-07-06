@@ -4677,5 +4677,11 @@ h2 + img {
 .contacts-page__iframe {
   width: 100%;
 }
+.feature__inner {
+  display: none;
+}
+.feature__inner--active {
+  display: block;
+}
 
 /*# sourceMappingURL=style.css.map */
