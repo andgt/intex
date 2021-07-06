@@ -52,6 +52,12 @@
   margin-bottom: 42px;
 }
 
+.catalog__tab-wrapper--card {
+  @media (min-width: @desktop-width) {
+    max-width: 405px;
+  }
+}
+
 .catalog__tab-inner {
   display: flex;
   justify-content: space-around;
@@ -155,6 +161,20 @@
     min-width: 220px;
     max-width: 220px;
     border-radius: 0 50px 50px 0;
+  }
+}
+
+.catalog__tab-button--card-left {
+  @media (min-width: @desktop-width) {
+    min-width: 229px;
+    max-width: 229px;
+  }
+}
+
+.catalog__tab-button--card-right {
+  @media (min-width: @desktop-width) {
+    min-width: 172px;
+    max-width: 172px;
   }
 }
 

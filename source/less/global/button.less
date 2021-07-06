@@ -36,7 +36,13 @@
 }
 
 .button__order-wrapper--card {
+  min-width: 170px;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    max-width: 165px;
+    min-width: 165px;
+  }
 }
 
 .button__order-wrapper--advantages {
