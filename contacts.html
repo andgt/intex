@@ -7,6 +7,7 @@
   <title>Контакты</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/favicon.svg">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=52603105-8ba9-4825-80d1-3cf5431847c9&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body class="page__body">
   <header class="header">
@@ -133,8 +134,7 @@
                 <a class="contacts-page__info-link" href="mailto:intex_46_kursk@mail.ru">intex_46_kursk@mail.ru</a>
               </li>
             </ul>
-            <div class="contacts-page__map">
-             <iframe class="contacts-page__iframe" src="https://yandex.ua/map-widget/v1/-/CCUeR4XlSB" width="560" height="400" frameborder="0" scrolling="no" allowfullscreen="" style="position:relative; border: 0"></iframe>
+            <div class="contacts-page__map" id="map">
             </div>
           </div>
           <form class="form form--feedback" action="#" method="POST">
@@ -281,5 +281,6 @@
     </button>
   </footer>
   <script src="js/script-accessories.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
