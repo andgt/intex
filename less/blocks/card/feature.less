@@ -7,34 +7,46 @@
 }
 
 .feature__inner--character {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  /*display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: normal;
-  column-gap: 20px;*/
+  display: none;
+}
+
+.feature__inner--active.feature__inner--character {
+  display: block;
 
   @media (min-width: @tablet-width) {
-    /*grid-template-columns: repeat(auto-fit, minmax(300px, 664px));
-    grid-auto-rows: max-content;
-    column-gap: 32px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 664px));
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 32px;
   }
 }
 
 .feature__block {
   min-width: 300px;
   max-width: 664px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-
-  &:nth-child(even) {
-    margin-right: 0;
-  }
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    min-width: 664px;
-    margin-bottom: 30px;
+    margin: 0 20px 30px 0;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+.feature__block:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    margin-top: -120px;
+  }
+}
+
+.feature__block:nth-child(2n+5) {
+  @media (min-width: @desktop-width) {
+    margin-top: -80px;
   }
 }
 
@@ -75,15 +87,15 @@
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 50px;
-  }
+    margin-right: 45px;
 
-  &:nth-child(even) {
-    margin-right: 0;
-  }
+    &:nth-child(even) {
+      margin-right: 0;
+    }
 
-  &:nth-last-child(-n+2) {
-    margin-bottom: 0;
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -98,4 +110,28 @@
 .feature__text--title {
   margin-right: 4px;
   font-weight: 600;
+}
+
+.feature__item-text {
+  .offset(0; 0);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 30px;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 34px;
+    row-gap: 0;
+    padding: 29px 30px 34px 30px;
+  }
+}
+
+.feature__description {
+  .offset(0; 0);
+  .typography(14px; 20px);
+
+  @media (min-width: @tablet-width) {
+    .typography(16px; 24px);
+  }
 }

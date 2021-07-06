@@ -17,6 +17,16 @@
   .offset(0; 0 8px 0 0);
 }
 
+.breadcrumbs__item--card {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .breadcrumbs__link {
   position: relative;
   display: block;

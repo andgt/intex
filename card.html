@@ -91,31 +91,31 @@
     <main class="main">
       <div class="container breadcrumbs" id="breadcrumbs">
         <ol class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--card">
             <a itemprop="item" href="main.html">
               <span itemprop="name" class="breadcrumbs__link">Главная</span>
             </a>
             <meta itemprop="position" content="1">
           </li>
-          <li class="breadcrumbs__item">
+          <li class="breadcrumbs__item breadcrumbs__item--card">
             <a href="catalog.html">
               <span itemprop="name" class="breadcrumbs__link">Каталог</span>
             </a>
             <meta itemprop="position" content="2">
           </li>
-          <li class="breadcrumbs__item">
+          <li class="breadcrumbs__item breadcrumbs__item--card">
             <a href="#">
               <span itemprop="name" class="breadcrumbs__link">Бассейны Intex</span>
             </a>
             <meta itemprop="position" content="3">
           </li>
-          <li class="breadcrumbs__item">
+          <li class="breadcrumbs__item breadcrumbs__item--card">
             <a href="#">
               <span itemprop="name" class="breadcrumbs__link">Каркасные бассейны</span>
             </a>
             <meta itemprop="position" content="4">
           </li>
-          <li class="breadcrumbs__item">
+          <li class="breadcrumbs__item breadcrumbs__item--card">
             <a href="#">
               <span itemprop="name" class="breadcrumbs__link breadcrumbs__link--active">INTEX каркасный (с фильтр-насосом, лестницей подстилкой и тент-накидкой)</span>
             </a>
@@ -125,7 +125,7 @@
       </div>
       <div class="card">
         <section class="card__info container">
-          <div class="card__info-text">
+          <div class="card__info-content">
             <h1 class="card__title">INTEX каркасный (с&nbsp;фильтр-насосом, лестницей подстилкой и тент-накидкой)</h1>
             <ul class="card__info-list">
               <li class="card__info-item">
@@ -153,14 +153,17 @@
               <p class="product__price product__price--card">35 000</p>
               <div class="button__order-wrapper button__order-wrapper--promo button__order-wrapper--card">
                 <a class="button button__order-inner" href="#">
-                  <span class="button__order">Заказать бассейн</span>
+                  <span class="button__order button__order--card">Заказать</span>
                 </a>
               </div>
             </div>
           </div>
           <div class="card__info-image">
             <div class="card__image-wrapper">
-              <img class="card__image" src="img/card/mobile/card-img.jpg" width="490" height="407" alt="Фото товара">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/card/card-img.png 1x, img/card/card-img@2x.png 2x">
+                <img class="card__image" src="img/card/mobile/card-img.jpg" srcset="img/card/mobile/card-img@2x.jpg 2x" width="490" height="407" alt="Фото товара">
+              </picture>
             </div>
             <div class="card-slider">
               <ul class="card-slider__list">
@@ -182,19 +185,19 @@
           </div>
         </section>
         <section class="card__description container">
-          <div class="catalog__tab-wrapper">
+          <div class="catalog__tab-wrapper catalog__tab-wrapper--card">
             <div class="catalog__tab-inner">
-              <button class="catalog__tab-button catalog__tab-button--active catalog__tab-button--left button" type="button" data-tab="tab-1">Характеристики</button>
-              <button class="catalog__tab-button catalog__tab-button--right button" type="button" data-tab="tab-2">Описание</button>
+              <button class="catalog__tab-button catalog__tab-button--card-left catalog__tab-button--active catalog__tab-button--left button" type="button" data-tab="tab-1">Характеристики</button>
+              <button class="catalog__tab-button catalog__tab-button--card-right catalog__tab-button--right button" type="button" data-tab="tab-2">Описание</button>
             </div>
           </div>
           <div class="feature">
-            <div class="feature__inner feature__inner--active feature__inner--character">
+            <div class="feature__inner feature__inner--character">
               <section class="feature__block">
                 <h3 class="feature__title">Размеры и вес:</h3>
                 <ul class="feature__list">
                   <li class="feature__item">
-                    <span class="feature__text feature__text--title">Глубина бассейна каркасного:</span>
+                    <span class="feature__text feature__text--title">Глубина бассейна:</span>
                     <span class="feature__text feature__text--data">107 см</span>
                   </li>
                   <li class="feature__item">
@@ -224,7 +227,7 @@
                   </li>
                   <li class="feature__item">
                     <span class="feature__text feature__text--title">Производительность:</span>
-                    <span class="feature__text feature__text--data">3.785 м3/ч</span>
+                    <span class="feature__text feature__text--data">3.785 м<sup>3</sup>/ч</span>
                   </li>
                   <li class="feature__item">
                     <span class="feature__text feature__text--title">Подстилка под бассейн:</span>
@@ -287,7 +290,7 @@
                 <ul class="feature__list">
                   <li class="feature__item">
                     <span class="feature__text feature__text--title">Объем:</span>
-                    <span class="feature__text feature__text--data">14 614 м3</span>
+                    <span class="feature__text feature__text--data">14 614 м<sup>3</sup></span>
                   </li>
                 </ul>
               </section>
@@ -318,12 +321,21 @@
                   </li>
                 </ul>
               </section>
-            </div>
-            <div class="feature__inner">
               <section class="feature__block">
-                <h3 class="feature__title">Описание</h3>
+                <h3 class="feature__title">Эксплуатация и безопасность:</h3>
                 <ul class="feature__list">
                   <li class="feature__item">
+                    <span class="feature__text feature__text--title">Морозоустойчивый:</span>
+                    <span class="feature__text feature__text--data">Нет</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="feature__inner feature__inner--active">
+              <section class="feature__block-text">
+                <h3 class="feature__title">Описание</h3>
+                <ul class="feature__list">
+                  <li class="feature__item-text">
                     <p class="feature__description">Пленка для бассейна производится по технологии Super-Touch, основанной на сочетании винила с полиэстером. Это позволяет сделать материал втрое прочнее обычных пленок для бассейна: усиливается прочность при механических повреждениях и стойкость к воздействию солнечных лучей. Круглый каркасный бассейн 26724 Prism Frame от Интекс станет выгодным приобретением, ведь для его установки не потребуется использования специального инструмента и сложной подготовки грунта. Его легко собирать, разбирать и хранить.</p>
                     <p class="feature__description">Компания INTEX представляет вашему вниманию круглый каркасный бассейн 26724 Prism Frame, обладающий надежным каркасом для изготовления которого используется прочный металл. Сборка бассейна занимает совсем немного времени. Поверхность каркаса покрыта порошковой краской, защищающей его от загрязнений.</p>
                   </li>
