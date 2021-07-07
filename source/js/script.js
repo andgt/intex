@@ -1,5 +1,7 @@
 'use strict'
 
+let main = document.querySelector(".main");
+
 // Меню
 
 let mainNav = document.querySelector('.main-nav');
@@ -26,126 +28,6 @@ menuItemsAccesories.onclick = function(evt) {
   evt.preventDefault();
   submenu.classList.toggle("main-nav__menu-item-open");
 };
-
-// Табы
-
-let tab = function() {
-  let tabBtn = document.querySelectorAll(".catalog__tab-button");
-  let cardsBlock = document.querySelectorAll(".catalog__cards");
-  let tabName;
-
-  tabBtn.forEach(element => {
-    element.addEventListener("click", selectTab)
-  });
-
-  function selectTab(evt) {
-    evt.preventDefault();
-    tabBtn.forEach(element => {
-      element.classList.remove("catalog__tab-button--active");
-    });
-    this.classList.add("catalog__tab-button--active");
-    tabName = this.getAttribute("data-tab");
-    selectTabContent(tabName);
-  }
-
-  function selectTabContent(tabName) {
-    cardsBlock.forEach(element => {
-      if (element.classList.contains(tabName)) {
-        element.classList.add("catalog__cards--active");
-      } else {
-        element.classList.remove("catalog__cards--active");
-      }
-    });
-  };
-};
-
-tab();
-
-// Слайдер
-
-let sliderItems = document.querySelectorAll(".slider__item");
-let btnLeft = document.querySelector(".slider__toggle--left");
-let btnRight = document.querySelector(".slider__toggle--right");
-let sliderList = document.querySelector(".slider__list");
-let offset = 0;
-let offsetPlus = 0;
-
-function slider() {
-  let sliderWidthDesktop;
-  let sliderItemMax;
-  for (let sliderItem of sliderItems) {
-    sliderWidthDesktop = sliderItem.offsetWidth + parseInt(getComputedStyle(sliderItem).marginRight);
-    sliderItemMax = sliderWidthDesktop * (sliderItems.length-3);
-  }
-
-  btnRight.onclick = function () {
-    offset += sliderWidthDesktop;
-
-    if (offset > sliderItemMax) {
-      offset = 0;
-    }
-
-    sliderList.style.left = -offset + "px";
-  };
-
-  btnLeft.onclick = function () {
-    offset = offset - sliderWidthDesktop;
-
-    if (offset < 0) {
-      offset = 0;
-    }
-
-    sliderList.style.left = -offset + "px";
-  };
-}
-
-function mobileSlider() {
-  let sliderWidth;
-  let sliderItemMaxMobile;
-  for (let sliderItem of sliderItems) {
-    sliderWidth = sliderItem.offsetWidth + (parseInt(getComputedStyle(sliderItem).marginRight) + parseInt(getComputedStyle(sliderItem).marginLeft));
-    sliderItemMaxMobile = sliderWidth * (sliderItems.length-1);
-  }
-
-  btnRight.onclick = function () {
-    offset += sliderWidth;
-
-    if (offset > sliderItemMaxMobile) {
-      offset = 0;
-    }
-
-    sliderList.style.left = -offset + "px";
-  };
-
-  btnLeft.onclick = function () {
-    offset = offset - sliderWidth;
-
-    if (offset < 0) {
-      offset = 0;
-    }
-
-    sliderList.style.left = -offset + "px";
-  };
-}
-
-if (window.innerWidth < 1400) {
-  window.onload = mobileSlider();
-} else {
-  window.onload = slider();
-}
-
-window.addEventListener("resize", function() {
-  if (window.innerWidth > 1399) {
-    slider();
-  }
-});
-
-window.addEventListener("resize", function() {
-  if (window.innerWidth < 1400) {
-    mobileSlider();
-  }
-});
-
 
 // Фиксированное меню
 
@@ -190,3 +72,216 @@ window.onscroll = function() {
   menuFixed();
   scrollUpButton();
 };
+
+// Сортировка
+
+if (main.classList.contains("main--catalog")) {
+  let htmlPage = document.querySelector(".page");
+  let btnSorting = document.querySelector(".button__sorting");
+  let sortingList = document.querySelector(".sorting__list");
+
+  btnSorting.onclick = function() {
+    sortingList.classList.toggle("sorting__list--active");
+  };
+
+  htmlPage.addEventListener("click", function (evt) {
+    if (!evt.target.classList.contains("sorting__list--active") && (!evt.target.classList.contains("button__sorting"))) {
+      sortingList.classList.remove("sorting__list--active");
+    }
+  });
+}
+
+// Табы
+
+  let tab = function() {
+    let tabBtn = document.querySelectorAll(".catalog__tab-button");
+    let cardsBlock = document.querySelectorAll(".catalog__cards");
+    let tabName;
+
+    tabBtn.forEach(element => {
+      element.addEventListener("click", selectTab)
+    });
+
+    function selectTab(evt) {
+      evt.preventDefault();
+      tabBtn.forEach(element => {
+        element.classList.remove("catalog__tab-button--active");
+      });
+      this.classList.add("catalog__tab-button--active");
+      tabName = this.getAttribute("data-tab");
+      selectTabContent(tabName);
+    }
+
+    function selectTabContent(tabName) {
+      cardsBlock.forEach(element => {
+        if (element.classList.contains(tabName)) {
+          element.classList.add("catalog__cards--active");
+        } else {
+          element.classList.remove("catalog__cards--active");
+        }
+      });
+    };
+  };
+
+if (main.classList.contains("main--index")) {
+  tab();
+}
+
+// Табы для страницы услуги
+
+let tabServices = function() {
+  let tabBtn = document.querySelectorAll(".catalog__tab-button");
+  let tabBlocks = document.querySelectorAll(".services__wrapper");
+  let tabName;
+
+  tabBtn.forEach(element => {
+    element.addEventListener("click", selectTab)
+  });
+
+  function selectTab(evt) {
+    evt.preventDefault();
+    tabBtn.forEach(element => {
+      element.classList.remove("catalog__tab-button--active");
+    });
+    this.classList.add("catalog__tab-button--active");
+    tabName = this.getAttribute("data-tab");
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent(tabName) {
+    tabBlocks.forEach(element => {
+      if (element.classList.contains(tabName)) {
+        element.classList.add("services__wrapper--active");
+      } else {
+        element.classList.remove("services__wrapper--active");
+      }
+    });
+  };
+};
+
+if (main.classList.contains("main--services")) {
+  tabServices();
+};
+
+// Табы для страницы Карточка товара
+
+let tabCard = function() {
+  let tabBtn = document.querySelectorAll(".catalog__tab-button");
+  let cardsBlock = document.querySelectorAll(".feature__inner");
+  let tabName;
+
+  tabBtn.forEach(element => {
+    element.addEventListener("click", selectTab)
+  });
+
+  function selectTab(evt) {
+    evt.preventDefault();
+    tabBtn.forEach(element => {
+      element.classList.remove("catalog__tab-button--active");
+    });
+    this.classList.add("catalog__tab-button--active");
+    tabName = this.getAttribute("data-tab");
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent(tabName) {
+    cardsBlock.forEach(element => {
+      if (element.classList.contains(tabName)) {
+        element.classList.add("feature__inner--active");
+      } else {
+        element.classList.remove("feature__inner--active");
+      }
+    });
+  };
+};
+
+if (main.classList.contains("main--card")) {
+  tabCard();
+}
+
+// Слайдер
+
+let sliderItems = document.querySelectorAll(".slider__item");
+let btnLeft = document.querySelector(".slider__toggle--left");
+let btnRight = document.querySelector(".slider__toggle--right");
+let sliderList = document.querySelector(".slider__list");
+let offset = 0;
+let offsetPlus = 0;
+
+if (main.classList.contains("main--slider")) {
+  function slider() {
+    let sliderWidthDesktop;
+    let sliderItemMax;
+    for (let sliderItem of sliderItems) {
+      sliderWidthDesktop = sliderItem.offsetWidth + parseInt(getComputedStyle(sliderItem).marginRight);
+      sliderItemMax = sliderWidthDesktop * (sliderItems.length-3);
+    }
+
+    btnRight.onclick = function () {
+      offset += sliderWidthDesktop;
+
+      if (offset > sliderItemMax) {
+        offset = 0;
+      }
+
+      sliderList.style.left = -offset + "px";
+    };
+
+    btnLeft.onclick = function () {
+      offset = offset - sliderWidthDesktop;
+
+      if (offset < 0) {
+        offset = 0;
+      }
+
+      sliderList.style.left = -offset + "px";
+    };
+  }
+
+  function mobileSlider() {
+    let sliderWidth;
+    let sliderItemMaxMobile;
+    for (let sliderItem of sliderItems) {
+      sliderWidth = sliderItem.offsetWidth + (parseInt(getComputedStyle(sliderItem).marginRight) + parseInt(getComputedStyle(sliderItem).marginLeft));
+      sliderItemMaxMobile = sliderWidth * (sliderItems.length-1);
+    }
+
+    btnRight.onclick = function () {
+      offset += sliderWidth;
+
+      if (offset > sliderItemMaxMobile) {
+        offset = 0;
+      }
+
+      sliderList.style.left = -offset + "px";
+    };
+
+    btnLeft.onclick = function () {
+      offset = offset - sliderWidth;
+
+      if (offset < 0) {
+        offset = 0;
+      }
+
+      sliderList.style.left = -offset + "px";
+    };
+  }
+
+  if (window.innerWidth < 1400) {
+    window.onload = mobileSlider();
+  } else {
+    window.onload = slider();
+  }
+
+  window.addEventListener("resize", function() {
+    if (window.innerWidth > 1399) {
+      slider();
+    }
+  });
+
+  window.addEventListener("resize", function() {
+    if (window.innerWidth < 1400) {
+      mobileSlider();
+    }
+  });
+}
