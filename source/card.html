@@ -7,6 +7,8 @@
     <title>INTEX каркасный (с фильтр-насосом, лестницей подстилкой и тент-накидкой)</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body class="page__body">
     <header class="header">
@@ -159,27 +161,35 @@
             </div>
           </div>
           <div class="card__info-image">
-            <div class="card__image-wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/card/card-img.png 1x, img/card/card-img@2x.png 2x">
-                <img class="card__image" src="img/card/mobile/card-img.jpg" srcset="img/card/mobile/card-img@2x.jpg 2x" width="490" height="407" alt="Фото товара">
-              </picture>
+            <div class="slick-slider slick-slider--big">
+              <div class="slick-slide">
+                <img class="card__image" src="img/card/card-img-1.png" width="666" height="470" alt="Фото товара">
+              </div>
+              <div class="slick-slide">
+                <img class="card__image" src="img/card/card-img.png" srcset="img/card/card-img@2x.png 2x" width="490" height="407" alt="Фото товара">
+              </div>
+              <div class="slick-slide">
+                <img class="card__image" src="img/card/card-img-2.png" width="666" height="470" alt="Фото товара">
+              </div>
+              <div class="slick-slide">
+                <img class="card__image" src="img/card/card-img-3.png" width="666" height="470" alt="Фото товара">
+              </div>
+              <div class="slick-slide">
+                <img class="card__image" src="img/card/card-img-4.png" width="666" height="470" alt="Фото товара">
+              </div>
             </div>
-            <div class="card-slider">
-              <ul class="card-slider__list">
-                <li class="card-slider__item">
-                  <img class="card__slider-img" src="img/card/card-img-slider-1.png" width="130" height="100" alt="Дополнительное фото к основному изображению">
-                </li>
-                <li class="card-slider__item card-slider__item--active">
-                  <img class="card__slider-img" src="img/card/card-img-slider-2.png" width="130" height="100" alt="Дополнительное фото к основному изображению">
-                </li>
-                <li class="card-slider__item">
-                  <img class="card__slider-img" src="img/card/card-img-slider-3.png" width="130" height="100" alt="Дополнительное фото к основному изображению">
-                </li>
-              </ul>
-              <div class="slider__controls">
-                <button class="slider__toggle slider__toggle--left slider__toggle--card slider__toggle--card-left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
-                <button class="slider__toggle slider__toggle--right slider__toggle--card slider__toggle--card-right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
+            <div class="slick-slider--min">
+              <div class="slick-slide">
+                <img class="slick-slider__img" src="img/card/card-img-slider-1.png" width="130" height="100" alt="Дополнительное фото к основному изображению">
+              </div>
+              <div class="slick-slide">
+                <img class="slick-slider__img" src="img/card/card-img-slider-2.png" width="130" height="100" alt="Дополнительное фото к основному изображению">
+              </div>
+              <div class="slick-slide">
+                <img class="slick-slider__img" src="img/card/card-img-slider-3.png" width="130" height="100" alt="Дополнительное фото к основному изображению">
+              </div>
+              <div class="slick-slide">
+                <img class="slick-slider__img" src="img/card/card-img-slider-4.png" width="130" height="100" alt="Дополнительное фото к основному изображению">
               </div>
             </div>
           </div>
@@ -458,5 +468,8 @@
       </button>
     </footer>
     <script src="js/script-card.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/slick-slider.js"></script>
   </body>
 </html>

@@ -26,6 +26,8 @@
 
 .card__info-image {
   @media (min-width: @desktop-width) {
+    width: 666px;
+    overflow-x: hidden;
     padding-bottom: 64px;
   }
 }
@@ -90,21 +92,14 @@
   }
 }
 
-.card__image-wrapper {
-  @media (min-width: @tablet-width) {
-    max-width: 666px;
-    margin: 0 auto 30px auto;
-  }
-}
-
 .card__image {
-  display: block;
   width: 100%;
+  max-width: 300px;
   height: 280px;
   object-fit: contain;
 
   @media (min-width: @tablet-width) {
-    width: 666px;
+    min-width: 666px;
     height: 470px;
   }
 }
