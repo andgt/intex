@@ -2989,7 +2989,7 @@ a {
     background-repeat: no-repeat;
   }
   .order::after {
-    top: 0;
+    top: 40px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -3002,14 +3002,23 @@ a {
 }
 @media (min-width: 1400px) {
   .order::before {
-    bottom: 0;
-    left: 0;
-    width: 885px;
-    height: 340px;
-    background-image: url("../img/desktop-img/order-background.png");
+    bottom: 80px;
+    left: -130px;
+    width: 798px;
+    height: 315px;
+    background-image: url("../img/desktop-img/order-background-min1.png");
   }
   .order::after {
     background-size: 1816px 711px;
+  }
+}
+@media (min-width: 1850px) {
+  .order::before {
+    bottom: 80px;
+    left: 0;
+    width: 885px;
+    height: 340px;
+    background-image: url("../img/desktop-img/order-background1.png");
   }
 }
 .order__inner {
@@ -3081,6 +3090,37 @@ a {
   color: #ffffff;
   background: linear-gradient(90deg, #479dd4 0%, #43c3d1 100%);
   border-radius: 30px;
+}
+@media (min-width: 1400px) {
+  .order__item::after {
+    content: "";
+    position: absolute;
+    top: 77px;
+    right: -21px;
+    width: 10px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='14' viewBox='0 0 10 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.88997 7.54634L2.65826 13.7752C2.51314 13.9203 2.32249 14 2.11761 14C1.91273 14 1.71924 13.9203 1.57696 13.7752L1.11599 13.3171C0.817205 13.0183 0.817205 12.5317 1.11599 12.2329L6.34891 7L1.11029 1.76422C0.965173 1.6191 0.885498 1.42845 0.885498 1.22357C0.885498 1.0187 0.965173 0.825199 1.11029 0.682923L1.56842 0.224792C1.71355 0.0796709 1.9042 -3.8147e-06 2.10908 -3.8147e-06C2.31395 -3.8147e-06 2.50745 0.0796709 2.64973 0.224792L8.88997 6.45935C9.03509 6.60447 9.11477 6.79797 9.11192 7.00284C9.11192 7.20772 9.03509 7.40122 8.88997 7.54634Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='4.99875' y1='14' x2='4.99875' y2='-3.8147e-06' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2347A4D4'/%3E%3Cstop offset='1' stop-color='%2344BFD2'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1400px) {
+  .order__item-4 {
+    margin-bottom: 10px;
+  }
+  .order__item-4::after {
+    top: 176px;
+    right: 84px;
+    transform: rotate(90deg);
+  }
+}
+@media (min-width: 1400px) {
+  .order__item-5 {
+    grid-column-start: -2;
+    grid-column-end: -1;
+  }
+  .order__item-5::after {
+    display: none;
+  }
 }
 .order__item:first-child::before {
   padding: 10px 10px 10px 25px;
