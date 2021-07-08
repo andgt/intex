@@ -401,6 +401,14 @@ a {
 .main__subtitle--services {
   text-align: left;
 }
+.main__subtitle--goods {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .main__subtitle--goods {
+    margin-bottom: 58px;
+  }
+}
 .main__description {
   padding: 0;
   margin: 0 0 40px 0;
@@ -459,6 +467,14 @@ a {
   background-repeat: no-repeat;
   background-position: -20px 0;
   background-color: #f2faff;
+}
+.page__body--card {
+  background: url("../img/card/card-bg.svg");
+  background-repeat: no-repeat;
+  background-position: -859px -552px;
+  background-size: 3160px 2810px;
+  background-color: #f2faff;
+  z-index: 0;
 }
 .header {
   position: relative;
@@ -1310,6 +1326,10 @@ a {
 .product__img {
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.4s ease;
+}
+.product__img:hover {
+  transform: scale(1.02);
 }
 .product__info-wrapper {
   position: relative;
@@ -2557,6 +2577,11 @@ a {
   background-color: #fefefe;
   border-radius: 10px;
 }
+.catalog__item:hover {
+  box-shadow: 0 0 15px 2px #44c1d2;
+  transition: 0.2s ease;
+  transform: scale(1.01);
+}
 .catalog__item--accessories {
   background: linear-gradient(90.71deg, #47a4d4 0.7%, #44c2d1 100%);
   box-shadow: 0 24px 30px -17px rgba(71, 159, 212, 0.2);
@@ -3006,7 +3031,7 @@ a {
     left: -130px;
     width: 798px;
     height: 315px;
-    background-image: url("../img/desktop-img/order-background-min1.png");
+    background-image: url("../img/desktop-img/order-background-min.png");
   }
   .order::after {
     background-size: 1816px 711px;
@@ -3018,7 +3043,7 @@ a {
     left: 0;
     width: 885px;
     height: 340px;
-    background-image: url("../img/desktop-img/order-background1.png");
+    background-image: url("../img/desktop-img/order-background.png");
   }
 }
 .order__inner {
@@ -4786,6 +4811,8 @@ h2 + img {
 .card__info {
   background-color: #fefefe;
   border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 34px 30px -17px rgba(71, 159, 212, 0.2);
 }
 @media (min-width: 1400px) {
   .card__info {
@@ -4793,12 +4820,16 @@ h2 + img {
     grid-template-columns: 664px 666px;
     -moz-column-gap: 32px;
          column-gap: 32px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1400px) {
   .card__info-content {
     padding: 50px 30px 86px 56px;
   }
+}
+.card__info-image {
+  padding-bottom: 10px;
 }
 @media (min-width: 1400px) {
   .card__info-image {
@@ -5120,6 +5151,18 @@ h2 + img {
 .slick-slider__img {
   min-width: 130px;
   height: 100px;
+}
+.goods {
+  position: relative;
+  padding: 40px 0 60px 0;
+  margin: 0;
+  background-color: #ffffff;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .goods {
+    padding: 100px 0 150px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
