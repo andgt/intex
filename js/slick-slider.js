@@ -16,14 +16,6 @@ $(document).ready(function(){
     initialSlide: 1,
     centerMode: true,
     variableWidth: true,
-    asNavFor: ".slick-slider--big",
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
+    asNavFor: ".slick-slider--big"
   });
 });
